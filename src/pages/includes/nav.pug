@@ -1,0 +1,45 @@
+block nav
+    nav.menu
+        .menu__left
+            picture.menu__logo
+                source(srcset="assets/img/header/logo.webp" type="image/webp")
+                img(src="assets/img/header/logo.png" alt="Кайрос")
+            ul.nav
+                li.nav__item
+                    svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+                        circle(cx="8.5" cy="8.5" r="1.5" fill="white")
+                        circle(cx="8.5" cy="8.5" r="1.5" fill="white")
+                        circle(cx="8.5" cy="8.5" r="1.5" fill="#B0976E")
+                        circle(cx="1.5" cy="8.5" r="1.5" fill="white")
+                        circle(cx="1.5" cy="8.5" r="1.5" fill="white")
+                        circle(cx="1.5" cy="8.5" r="1.5" fill="#B0976E")
+                        circle(cx="8.5" cy="1.5" r="1.5" fill="white")
+                        circle(cx="8.5" cy="1.5" r="1.5" fill="white")
+                        circle(cx="8.5" cy="1.5" r="1.5" fill="#B0976E")
+                        circle(cx="1.5" cy="1.5" r="1.5" fill="white")
+                        circle(cx="1.5" cy="1.5" r="1.5" fill="white")
+                        circle(cx="1.5" cy="1.5" r="1.5" fill="#B0976E")
+                    a.nav__link(href="#" title="Каталог") Каталог
+                li.nav__item
+                    a.nav__link(href="#" title="Распродажа") Распродажа
+                li.nav__item
+                    a.nav__link(href="#" title="Партнёрам") Партнёрам
+        .menu__right
+            .menu__search
+                input(type="search")
+                svg(width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    circle(cx="6.5" cy="6.5" r="5.5" stroke="#333333" stroke-width="2")
+                    rect(x="9" y="10.4142" width="2" height="7" transform="rotate(-45 9 10.4142)" fill="#333333")
+            .menu__account
+                svg(width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    path(fill-rule="evenodd" clip-rule="evenodd" d="M18 20H20C20 15.5817 15.5228 12 10 12C4.47715 12 0 15.5817 0 20H2C2 17.0797 5.14219 14 10 14C14.8578 14 18 17.0797 18 20Z" fill="#333333")
+                    circle(cx="10" cy="5" r="4" stroke="#333333" stroke-width="2")
+            .menu__cart
+                svg(width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    rect(x="6" y="1" width="8" height="10" rx="2" stroke="#333333" stroke-width="2")
+                    path(d="M1 7C1 6.44772 1.44772 6 2 6H18C18.5523 6 19 6.44772 19 7V19C19 19.5523 18.5523 20 18 20H2C1.44772 20 1 19.5523 1 19V7Z" fill="white" stroke="#333333" stroke-width="2")
+                span.cart__total 5
+            .menu__hamburger
+                span
+                span
+                span
