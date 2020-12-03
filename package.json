@@ -44,6 +44,7 @@
     "postcss": "^8.1.1"
   },
   "dependencies": {
-    "gulp-shorthand": "^1.1.0"
+    "gulp-shorthand": "^1.1.0",
+    "rfs": "^9.0.3"
   }
 }

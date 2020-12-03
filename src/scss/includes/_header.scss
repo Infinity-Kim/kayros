@@ -119,6 +119,9 @@ header {
       cursor: pointer;
       padding: 10px;
       margin-left: 40px;
+      @media (min-width: 1200px) {
+        margin-left: 70px;
+      }
 
       span {
         display: block;
@@ -161,6 +164,11 @@ header {
         line-height: px-to-rem(96px);
       }
 
+      @media (min-width: 1920px) {
+        font-size: calc(4.5rem + 3vw);
+        line-height: 1.2;
+      }
+
       .hover {
         cursor: pointer;
 
@@ -172,6 +180,10 @@ header {
     }
 
     &__subtitle {
+      @media (min-width: 1920px) {
+        font-size: calc(0.875rem + 1vw);
+        line-height: 1.2;
+      }
       margin-top: 25px;
       text-transform: uppercase;
       text-align: center;
