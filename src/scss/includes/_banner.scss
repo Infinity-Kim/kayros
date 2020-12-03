@@ -1,0 +1,43 @@
+.webp {
+  .banner {
+    &__image {
+      background: url('../img/banner/bg.webp') no-repeat center/cover;
+    }
+  }
+}
+
+.no-webp {
+  .banner {
+    &__image {
+      background: url('../img/banner/bg.png') no-repeat center/cover;
+    }
+  }
+}
+
+.banner {
+  position: relative;
+  height: 333px;
+  &__bg {
+    height: inherit;
+    position: absolute;
+    left: -20px;
+    right: -20px;
+    @media (min-width: 1400px) {
+      padding: 100px 80px;
+      left: -80px;
+      right: -80px;
+    }
+    @media (min-width: 992px) {
+      background: #F1EBE2;
+      padding: 100px 20px;
+    }
+  }
+
+  &__image {
+    height: inherit;
+  }
+
+  @media (min-width: 992px) {
+    height: 100vh;
+  }
+}

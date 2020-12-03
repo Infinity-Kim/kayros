@@ -165,7 +165,7 @@ header {
       }
 
       @media (min-width: 1920px) {
-        font-size: calc(4.5rem + 3vw);
+        font-size: calc(4.5rem + 2.5vw);
         line-height: 1.2;
       }
 
@@ -181,10 +181,11 @@ header {
 
     &__subtitle {
       @media (min-width: 1920px) {
-        font-size: calc(0.875rem + 1vw);
+        font-size: calc(0.875rem + 0.8vw);
         line-height: 1.2;
       }
       margin-top: 25px;
+      margin-bottom: 45px;
       text-transform: uppercase;
       text-align: center;
       font-size: px-to-rem(14px);
@@ -195,7 +196,6 @@ header {
 
     svg {
       display: none;
-      margin-top: 50px;
 
       @media (min-width: 1200px) {
         display: block;

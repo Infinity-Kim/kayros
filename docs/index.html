@@ -10,7 +10,7 @@
   <meta name="keywords" content="одежда из льна, льняная одежда, кайрос, kayros, kayrosxl">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;?family=Playfair+Display&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
@@ -20,7 +20,8 @@
         <div class="menu__left">
           <picture class="menu__logo">
             <source srcset="assets/img/header/logo.webp" type="image/webp">
-              <img src="assets/img/header/logo.png" alt="Кайрос">
+              <source srcset="assets/img/header/logo.png" type="image/png">
+                <img src="assets/img/header/logo.png" alt="Кайрос">
           </picture>
           <ul class="nav">
             <li class="nav__item">
@@ -78,7 +79,13 @@
         </svg>
       </section>
     </header>
+    <aside class="banner">
+      <div class="banner__bg">
+        <div class="banner__image"></div>
+      </div>
+    </aside>
   </div>
+  <script src="assets/js/modernizr-custom.js"></script>
 </body>
 
 </html>
