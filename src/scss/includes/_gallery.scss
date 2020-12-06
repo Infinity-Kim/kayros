@@ -94,6 +94,12 @@
     color: #333333;
     @media (min-width: 576px) {
       text-align: left;
+      font-size: px-to-rem(36px);
+      line-height: px-to-rem(48px);
+    }
+    @media (min-width: 992px) {
+      font-size: px-to-rem(36px);
+      line-height: px-to-rem(48px);
     }
   }
 
