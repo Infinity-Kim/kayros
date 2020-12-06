@@ -2,8 +2,6 @@ header {
   padding-top: 10px;
   @media (min-width: 992px) {
     height: calc(100vh - 10px);
-  }
-  @media (min-width: 1200px) {
     display: flex;
     flex-direction: column;
   }
@@ -143,7 +141,7 @@ header {
   }
 
   .info {
-    @media (min-width: 1200px) {
+    @media (min-width: 992px) {
       flex-grow: 1;
       display: flex;
       flex-direction: column;
@@ -159,7 +157,7 @@ header {
       text-align: center;
       margin-top: 30px;
 
-      @media (min-width: 1200px) {
+      @media (min-width: 992px) {
         font-size: px-to-rem(72px);
         line-height: px-to-rem(96px);
       }

@@ -28,6 +28,7 @@
       right: -80px;
     }
     @media (min-width: 992px) {
+      height: calc(100vh - 200px);
       background: #F1EBE2;
       padding: 100px 20px;
     }

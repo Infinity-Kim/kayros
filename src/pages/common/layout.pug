@@ -10,10 +10,13 @@ html(lang="ru")
         meta(name="description" content=description)
         meta(name="keywords" content=keywords)
 
-        link(rel="preconnect" href="https://fonts.gstatic.com")
-        link(href="https://fonts.googleapis.com/css2?family=Open+Sans&?family=Playfair+Display&display=swap" rel="stylesheet")
+        link(rel="preconnect" href="//fonts.gstatic.com")
+        link(href="//fonts.googleapis.com/css2?family=Open+Sans&?family=Playfair+Display&display=swap" rel="stylesheet")
         link(rel="stylesheet" href="assets/css/main.css")
+        link(rel="stylesheet" type="text/css" href="//unpkg.com/swiper/swiper-bundle.min.css")
     body
         .container
             block content
         script(src="assets/js/modernizr-custom.js")
+        script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
+        script(src="assets/js/main.js")
