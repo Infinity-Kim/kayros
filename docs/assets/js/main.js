@@ -3,6 +3,10 @@
 const width = document.documentElement.clientWidth;
 if (+width >= 992) {
     const swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+        },
         loop: true,
         slidesPerView: 2.5,
         spaceBetween: 20,

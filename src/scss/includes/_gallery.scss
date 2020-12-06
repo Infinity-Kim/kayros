@@ -64,6 +64,23 @@
   &__info {
     @media (min-width: 576px) {
       margin-right: 100px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      margin-bottom: 60px;
+    }
+
+    .swiper-pagination {
+      display: none;
+      height: 2px;
+      position: relative;
+      .swiper-pagination-progressbar-fill {
+        background: rgba(176, 151, 110, 0.7);
+      }
+
+      @media (min-width: 576px) {
+        display: block;
+      }
     }
   }
 
