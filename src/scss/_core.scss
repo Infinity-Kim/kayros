@@ -10,8 +10,24 @@ body {
 }
 
 .container {
-  @include min-max(375px, 100%, 20px);
-  @media (min-width: 1400px) {
-    padding: 0 80px;
+  @include min-max(375px, 100%, 0);
+  //@include min-max(375px, 100%, 20px);
+  //@media (min-width: 1400px) {
+  //  padding: 0 80px;
+  //}
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+
+  .swiper-wrapper {
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }

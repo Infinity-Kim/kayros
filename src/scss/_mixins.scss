@@ -12,17 +12,19 @@
 
 @mixin btn() {
   width: 100%;
-  background-color: $green;
+  background-color: #F1EBE2;
   font-size: px-to-rem(14px);
-  line-height: px-to-rem(16px);
+  line-height: px-to-rem(22px);
   text-align: center;
-  color: $white;
-  border-radius: 4px;
-  border: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #B0976E;
+  border: 1px solid #B0976E;
+  box-sizing: border-box;
+  border-radius: 3px;
   cursor: pointer;
   display: block;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding: 13px 40px;
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 500ms;
