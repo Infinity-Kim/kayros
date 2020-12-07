@@ -91,6 +91,10 @@
 
         &:hover {
           border: 1px solid #D8CBB7;
+
+          .swiper-slide-btn {
+            background: #B0976E;
+          }
         }
 
         &-img {
@@ -132,6 +136,67 @@
             letter-spacing: 0.1em;
             text-transform: uppercase;
             color: #FFFFFF;
+          }
+        }
+
+        &-colors {
+          display: flex;
+          margin-bottom: 17px;
+
+          .colors__item {
+            list-style: none;
+            span {
+              display: block;
+              width: 20px;
+              height: 20px;
+              text-align: center;
+              border: 1px solid #fff;
+              padding: 1px;
+
+              a {
+                width: 16px;
+                height: 16px;
+                display: block;
+                &.red {
+                  background: #d43041;
+                }
+
+                &.green {
+                  background: #8f9394;
+                }
+
+                &.blue {
+                  background: #9eb8b8;
+                }
+              }
+            }
+          }
+        }
+        &-title {
+          font-family: 'Playfair Display', serif;
+          text-decoration: none;
+          color: #333;
+          line-height: 120%;
+          text-transform: uppercase;
+          font-size: px-to-rem(23px);
+          margin-bottom: 12px;
+        }
+        &-price {
+          color: #D83244;
+          line-height: 120%;
+          font-size: px-to-rem(16px);
+          margin-bottom: 25px;
+        }
+        &-btn {
+          @include btn {
+            margin-bottom: 25px;
+            background-color: #252C1C;
+            max-width: 117px;
+            line-height: 37px;
+            font-size: 13px;
+            color: #FFF;
+            padding: 0;
+            transition: background .2s ease-in-out;
           }
         }
       }
