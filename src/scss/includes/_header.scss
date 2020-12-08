@@ -49,6 +49,10 @@ header {
         line-height: px-to-rem(22px);
         color: $black;
         margin-right: 35px;
+
+        &:hover {
+          color: #B0976E;
+        }
       }
     }
 
