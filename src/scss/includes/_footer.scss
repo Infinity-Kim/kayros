@@ -39,12 +39,36 @@
     flex-direction: column;
     align-items: center;
     background: #F1EBE2;
+    @media (min-width: 576px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @media (min-width: 992px) {
+      align-items: flex-start;
+    }
     @media (min-width: 1400px) {
       padding: 120px 80px;
     }
 
+    &__right {
+      order: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media (min-width: 576px) {
+        order: 2;
+      }
+      @media (min-width: 992px) {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-grow: 1;
+        align-items: flex-start;
+        margin-left: calc(100px + 2vw);
+      }
+    }
+
     &__contacts {
-      order: 4;
+      order: 2;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -75,28 +99,39 @@
           margin-right: 20px;
         }
       }
+
+      @media (min-width: 576px) {
+        order: 1;
+        align-items: flex-start;
+      }
     }
 
     &__catalog {
-      order: 0;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       min-width: 220px;
+      @media (min-width: 992px) {
+        min-width: 0;
+      }
     }
     &__support {
-      order: 1;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       min-width: 220px;
+      @media (min-width: 992px) {
+        min-width: 0;
+      }
     }
     &__company {
-      order: 2;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       min-width: 220px;
+      @media (min-width: 992px) {
+        min-width: 0;
+      }
     }
 
     .main-link {
@@ -112,15 +147,29 @@
       margin-bottom: 20px;
 
       &.partner {
-        order: 3;
         min-width: 220px;
 
         .partner__icon {
           margin: 0 10px 0 0;
         }
+
+        @media (min-width: 992px) {
+          display: none;
+        }
+
+        &.desktop {
+          display: flex;
+
+          svg {
+            display: block;
+          }
+        }
       }
 
       svg {
+        @media (min-width: 992px) {
+          display: none;
+        }
         margin-left: 10px;
         cursor: pointer;
       }
@@ -146,6 +195,10 @@
         font-size: px-to-rem(14px);
         line-height: px-to-rem(20px);
         color: rgba(0, 0, 0, 0.7);
+      }
+
+      @media (min-width: 992px) {
+        display: block;
       }
     }
   }
