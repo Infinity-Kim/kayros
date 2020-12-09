@@ -7,6 +7,9 @@ const swiper2 = new Swiper('.swiper-2', {
     slidesPerView: 'auto',
     spaceBetween: 25,
 });
+const swiper3 = new Swiper('.swiper-3', {
+    slidesPerView: 'auto'
+});
 
 if (+width >= 992) {
     const swiper = new Swiper('.swiper-1', {

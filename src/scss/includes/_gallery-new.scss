@@ -11,13 +11,6 @@
         }
       }
     }
-
-    &__btn {
-      @include btn {
-        margin-top: 40px;
-        max-width: 250px;
-      }
-    }
   }
 }
 
@@ -32,13 +25,6 @@
             }
           }
         }
-      }
-    }
-
-    &__btn {
-      @include btn {
-        margin-top: 40px;
-        max-width: 250px;
       }
     }
   }
