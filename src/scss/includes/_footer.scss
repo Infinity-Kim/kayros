@@ -33,6 +33,122 @@
 }
 
 .footer {
+  &-navigation {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F1EBE2;
+    @media (min-width: 1400px) {
+      padding: 120px 80px;
+    }
+
+    &__contacts {
+      order: 4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      picture {
+        mix-blend-mode: darken;
+      }
+
+      .phone {
+        margin: 5px 0 15px 0;
+        text-decoration: none;
+        font-size: px-to-rem(23px);
+        line-height: px-to-rem(37px);
+        letter-spacing: 0.05em;
+        color: #333333;
+      }
+
+      .copyright {
+        margin-bottom: 30px;
+        font-size: px-to-rem(12px);
+        line-height: px-to-rem(19px);
+        color: rgba(51, 51, 51, 0.7);
+      }
+
+      .social {
+        display: flex;
+        svg {
+          opacity: 0.5;
+          margin-right: 20px;
+        }
+      }
+    }
+
+    &__catalog {
+      order: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-width: 220px;
+    }
+    &__support {
+      order: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-width: 220px;
+    }
+    &__company {
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-width: 220px;
+    }
+
+    .main-link {
+      display: flex;
+      text-decoration: none;
+      align-items: center;
+      font-size: px-to-rem(16px);
+      line-height: px-to-rem(26px);
+      font-weight: bold;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #333333;
+      margin-bottom: 20px;
+
+      &.partner {
+        order: 3;
+        min-width: 220px;
+
+        .partner__icon {
+          margin: 0 10px 0 0;
+        }
+      }
+
+      svg {
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    }
+
+    .main-nav {
+      margin-bottom: 25px;
+      display: none;
+      transition: 0.3s;
+
+      &.active {
+        display: block;
+      }
+
+      &__item {
+        margin-bottom: 25px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &__link {
+        font-size: px-to-rem(14px);
+        line-height: px-to-rem(20px);
+        color: rgba(0, 0, 0, 0.7);
+      }
+    }
+  }
   &__copyright {
     padding: 50px 0;
     display: flex;

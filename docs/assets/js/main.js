@@ -1,7 +1,8 @@
 'use strict';
 
 const width = document.documentElement.clientWidth;
-const btnTop = document.querySelector('.top');
+const btnTop = document.querySelector('.top'),
+    footerLink = document.querySelectorAll('.toggle');
 let requestId;
 const swiper2 = new Swiper('.swiper-2', {
     slidesPerView: 'auto',
@@ -40,4 +41,24 @@ const up = () => {
 }
 
 btnTop.addEventListener('click', up);
+
+footerLink.forEach((e) => {
+    e.addEventListener('click',(e) => {
+        e.preventDefault();
+
+        let path = e.target.querySelector('path');
+
+        if (e.target.classList.contains('close')) {
+            e.target.classList.remove('close');
+            path.setAttribute('d', 'M1 7L7 1L13 7');
+        } else {
+            e.target.classList.add('close');
+            path.setAttribute('d', 'M1 1L7 7L13 1');
+        }
+
+        let menu = e.target.parentElement.nextElementSibling;
+
+        menu.classList.toggle('active');
+    })
+})
 
