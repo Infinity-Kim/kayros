@@ -38,6 +38,9 @@
       @media (min-width: 992px) {
         justify-content: center;
       }
+      @media (min-width: 1440px) {
+        justify-content: space-between;
+      }
       .swiper-slide {
         width: auto!important;
         display: flex;

@@ -2,7 +2,9 @@
 
 const width = document.documentElement.clientWidth;
 const btnTop = document.querySelector('.top'),
-    footerLink = document.querySelectorAll('.toggle');
+    footerLink = document.querySelectorAll('.toggle'),
+    burger = document.querySelector('.menu__hamburger'),
+    burgerBtnClose = document.querySelector('.aside__close');
 let requestId;
 const swiper2 = new Swiper('.swiper-2', {
     slidesPerView: 'auto',
@@ -40,7 +42,21 @@ const up = () => {
     }
 }
 
+const burgerShow = () => {
+    let burgerAside = document.querySelector('.menu__hamburger-aside');
+
+    burgerAside.classList.add('active');
+}
+
+const burgerClose = () => {
+    let burgerAside = document.querySelector('.menu__hamburger-aside');
+
+    burgerAside.classList.remove('active');
+}
+
 btnTop.addEventListener('click', up);
+burger.addEventListener('click', burgerShow);
+burgerBtnClose.addEventListener('click', burgerClose);
 
 footerLink.forEach((e) => {
     e.addEventListener('click',(e) => {
