@@ -44,6 +44,7 @@
   }
 
   @media (min-width: 1400px) {
+    padding-top: 112px;
     padding-right: 80px;
     padding-left: 80px;
   }
@@ -61,6 +62,9 @@
 
     @media (min-width: 1400px) {
       margin-right: 80px;
+      font-size: px-to-rem(36px);
+      line-height: px-to-rem(48px);
+      margin-bottom: 96px;
     }
   }
 
