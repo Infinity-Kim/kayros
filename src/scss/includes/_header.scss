@@ -427,7 +427,8 @@ header {
 
       .hover {
         cursor: pointer;
-
+        transition: 0.3s;
+        border-bottom: 1px solid rgba(176, 151, 110, 0.4);
         &:hover {
           color: #B0976E;
           border-bottom: 1px solid rgba(176, 151, 110, 0.4);
