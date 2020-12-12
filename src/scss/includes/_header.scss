@@ -203,6 +203,12 @@ header {
               visibility: visible;
               transition: 0.3s;
             }
+
+            +.overlay {
+              opacity: 1;
+              visibility: visible;
+              transition: 0.3s;
+            }
           }
           .menu__hover {
             opacity: 0;
@@ -217,18 +223,6 @@ header {
             height: 225px;
             display: flex;
             align-items: center;
-
-            &:before {
-              content: '';
-              background: #121212;
-              position: fixed;
-              left: 0;
-              top: 289px;
-              width: 100%;
-              height: 100%;
-              opacity: 0.7;
-              z-index: 1;
-            }
 
             &.active {
               opacity: 1;
@@ -267,6 +261,22 @@ header {
                   color: #B0976E
                 }
               }
+            }
+          }
+
+          +.overlay {
+            opacity: 0;
+            visibility: hidden;
+            &:before {
+              content: '';
+              background: #121212;
+              position: fixed;
+              left: 0;
+              top: 289px;
+              width: 100%;
+              height: 100%;
+              opacity: 0.7;
+              z-index: 1;
             }
           }
         }
