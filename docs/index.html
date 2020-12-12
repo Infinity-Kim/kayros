@@ -207,7 +207,13 @@
       </section>
     </header>
     <aside class="banner">
-      <div class="banner__image"></div>
+      <div class="banner__image wrap">
+        <picture>
+          <source srcset="assets/img/banner/bg.webp" type="image/webp">
+            <source srcset="assets/img/banner/bg.png" type="image/png">
+              <img src="assets/img/banner/bg.png">
+        </picture>
+      </div>
     </aside>
     <section class="gallery">
       <div class="gallery__info">
@@ -330,7 +336,7 @@
         </div>
       </div><a class="gallery-new__btn" href="#">Перейти в каталог</a>
     </section>
-    <section class="information">
+    <section class="information wrap">
       <div class="information__left">
         <p>Kayros специализируется на производстве одежды из 100% натурального льна.</p>
         <p>Поэтому выбирая и приобретая для себя наши качественные вещи, Вы можете быть уверены, что дарите своему телу здоровье и комфорт, а себе возможность выглядеть красиво и стильно.</p>
