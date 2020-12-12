@@ -5,6 +5,7 @@ const btnTop = document.querySelector('.top'),
     footerLink = document.querySelectorAll('.toggle'),
     burger = document.querySelector('.menu__hamburger'),
     burgerBtnClose = document.querySelector('.aside__close');
+    // catalogNav = document.querySelector('.nav__link.catalog');
 let requestId;
 const swiper2 = new Swiper('.swiper-2', {
     slidesPerView: 'auto',
@@ -54,9 +55,19 @@ const burgerClose = () => {
     burgerAside.classList.remove('active');
 }
 
+// const showCatalog = (e) => {
+//     let menuHover = document.querySelector('.menu__hover');
+//
+//     menuHover.classList.toggle('active');
+//
+//     console.log(e.relatedTarget);
+// }
+
 btnTop.addEventListener('click', up);
 burger.addEventListener('click', burgerShow);
 burgerBtnClose.addEventListener('click', burgerClose);
+// catalogNav.addEventListener('mouseover', showCatalog)
+// catalogNav.addEventListener('mouseout', showCatalog)
 
 footerLink.forEach((e) => {
     e.addEventListener('click',(e) => {

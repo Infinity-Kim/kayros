@@ -18,6 +18,7 @@ header {
     justify-content: space-between;
 
     &__hamburger-aside {
+      display: none;
       opacity: 0;
       visibility: hidden;
       position: absolute;
@@ -31,6 +32,7 @@ header {
       &.active {
         opacity: 1;
         visibility: visible;
+        display: flex;
       }
 
       @media (min-width: 992px) {
@@ -177,6 +179,7 @@ header {
     }
 
     .nav {
+      margin: 0;
       display: none;
 
       @media (min-width: 992px) {
@@ -189,6 +192,84 @@ header {
         display: flex;
         align-items: center;
         cursor: pointer;
+
+
+        &.catalog {
+          padding-top: 16px;
+          padding-bottom: 16px;
+          &:hover {
+            .menu__hover {
+              opacity: 1;
+              visibility: visible;
+              transition: 0.3s;
+            }
+          }
+          .menu__hover {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            background: #fff;
+            left: 0;
+            top: 64px;
+            width: 100%;
+            z-index: 2;
+            transition: 0.3s;
+            height: 225px;
+            display: flex;
+            align-items: center;
+
+            &:before {
+              content: '';
+              background: #121212;
+              position: fixed;
+              left: 0;
+              top: 289px;
+              width: 100%;
+              height: 100%;
+              opacity: 0.7;
+              z-index: 1;
+            }
+
+            &.active {
+              opacity: 1;
+              visibility: visible;
+              display: flex;
+              align-items: center;
+              height: 225px;
+            }
+
+            .list {
+              margin: 0 55px 0 164px;
+
+              &:last-child {
+                margin: 0 55px 0 0;
+              }
+
+              @media (min-width: 1400px) {
+                margin: 0 55px 0 224px;
+              }
+              &__item {
+                margin-bottom: 18px;
+
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+
+              &__link {
+                font-size: px-to-rem(14px);
+                line-height: px-to-rem(22px);
+                letter-spacing: 0.05em;
+                color: #333333;
+                transition: 0.3s;
+
+                &:hover {
+                  color: #B0976E
+                }
+              }
+            }
+          }
+        }
 
         svg {
           margin-right: 10px;
