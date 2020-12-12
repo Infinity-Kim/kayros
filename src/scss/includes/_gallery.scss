@@ -108,6 +108,11 @@
     padding-bottom: 113px;
   }
 
+  @media (min-width: 1920px) {
+    padding-top: calc(125px * 1.4);
+    padding-bottom: calc(113px * 1.4);
+  }
+
   &__info {
     margin-right: 20px;
     @media (min-width: 576px) {

@@ -44,9 +44,12 @@
   }
 
   @media (min-width: 1400px) {
-    padding-top: 112px;
-    padding-right: 80px;
-    padding-left: 80px;
+    padding: 112px 80px 125px;
+  }
+
+  @media (min-width: 1920px) {
+    padding-top: calc(112px * 1.4);
+    padding-bottom: calc(125px * 1.4);
   }
 
   &__title {
