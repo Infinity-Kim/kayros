@@ -419,8 +419,10 @@ header {
       }
 
       @media (min-width: 1920px) {
-        font-size: calc(4.5rem + 2.5vw);
-        line-height: 1.2;
+        font-size: calc(4.5rem * 1.4);
+        line-height: calc(6rem * 1.4);
+        //font-size: calc(4.5rem + 2.5vw);
+        //line-height: 1.2;
       }
 
       .hover {
@@ -435,8 +437,9 @@ header {
 
     &__subtitle {
       @media (min-width: 1920px) {
-        font-size: calc(0.875rem + 0.8vw);
-        line-height: 1.2;
+        //font-size: calc(0.875rem + 0.8vw);
+        font-size: calc(0.875rem * 1.4);
+        line-height: calc(1.375rem * 1.4);
       }
       margin-top: 25px;
       margin-bottom: 45px;
