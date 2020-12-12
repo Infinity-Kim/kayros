@@ -22,7 +22,7 @@ if (+width >= 1920) {
         },
         slidesPerView: 2.5,
         spaceBetween: 80,
-        mousewheel: true
+        mousewheel: true,
     });
 } else if (+width >= 992 && +width < 1920) {
     const swiper = new Swiper('.swiper-1', {
