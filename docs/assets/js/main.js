@@ -14,15 +14,24 @@ const swiper2 = new Swiper('.swiper-2', {
 const swiper3 = new Swiper('.swiper-3', {
     slidesPerView: 'auto'
 });
-
-if (+width >= 992) {
+if (+width >= 1920) {
     const swiper = new Swiper('.swiper-1', {
         pagination: {
             el: '.swiper-pagination',
             type: 'progressbar',
         },
         slidesPerView: 2.5,
-        spaceBetween: 20,
+        spaceBetween: 80,
+        mousewheel: true
+    });
+} else if (+width >= 992 && +width < 1920) {
+    const swiper = new Swiper('.swiper-1', {
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+        },
+        slidesPerView: 2.5,
+        spaceBetween: 60,
         mousewheel: true
     });
 } else {
