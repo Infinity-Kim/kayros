@@ -5,6 +5,7 @@ global.$ = {
     browserSync: require('browser-sync').create(), // перезагрузка страницы
     autoprefixer: require('autoprefixer'), // расстановка автопрефиксов
     cssnano: require('cssnano'), // расстановка автопрефиксов
+    postcssAnimation: require('postcss-animation'),
     config: require('./gulp/config')
 };
 

@@ -3,6 +3,10 @@
   padding-bottom: 45px;
   display: flex;
   flex-direction: column;
+  @media (min-width: 768px) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
   @media (min-width: 992px) {
     flex-direction: row;
   }
@@ -28,7 +32,7 @@
       letter-spacing: 0.05em;
       color: #333333;
 
-      @media (min-width: 992px) {
+      @media (min-width: 768px) {
         font-size: px-to-rem(27px);
         line-height: px-to-rem(38px);
       }
@@ -39,7 +43,7 @@
         color: #B0976E;
         text-decoration: none;
 
-        @media (min-width: 992px) {
+        @media (min-width: 768px) {
           font-size: px-to-rem(16px);
           line-height: px-to-rem(26px);
         }
@@ -53,7 +57,7 @@
       line-height: px-to-rem(22px);
       color: #333333;
       opacity: 0.8;
-      @media (min-width: 992px) {
+      @media (min-width: 768px) {
         font-size: px-to-rem(16px);
         line-height: px-to-rem(26px);
       }

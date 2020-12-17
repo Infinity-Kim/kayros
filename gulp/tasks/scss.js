@@ -11,7 +11,8 @@ module.exports = () => {
                     cascade: false,
                     overrideBrowserslist: ['> 5%', 'last 2 versions', 'ie > 7']
                 }),
-                $.cssnano({})
+                $.cssnano({}),
+                $.postcssAnimation({})
             ]))
             .pipe($.glp.sourcemaps.write())
             .pipe($.gulp.dest('./docs/assets/css'))

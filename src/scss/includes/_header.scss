@@ -1,7 +1,7 @@
 header {
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 10px;
+  padding-top: 25px;
   @media (min-width: 992px) {
     height: calc(100vh - 10px);
     display: flex;
@@ -45,10 +45,10 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 20px;
+        padding: 25px 20px;
 
         @media (min-width: 1400px) {
-          padding: 10px 80px;
+          padding: 25px 80px;
         }
 
         .aside__close {
@@ -176,6 +176,10 @@ header {
       display: flex;
       align-items: center;
       justify-content: flex-start;
+
+      .menu__logo {
+        animation: fadeIn 3s;
+      }
     }
 
     .nav {
@@ -195,6 +199,9 @@ header {
 
 
         &.catalog {
+          .nav__link {
+            animation: fadeIn 3s;
+          }
           padding-top: 16px;
           padding-bottom: 16px;
           &:hover {
@@ -282,6 +289,7 @@ header {
         }
 
         svg {
+          animation: rotateIn 3s;
           margin-right: 10px;
         }
       }
@@ -313,15 +321,12 @@ header {
     &__search {
       display: none;
 
-      @media (min-width: 576px) {
+      @media (min-width: 992px) {
         display: flex;
         align-items: center;
         flex-grow: 1;
         margin-right: 35px;
         margin-left: 35px;
-      }
-
-      @media (min-width: 992px) {
         max-width: 220px;
       }
 
@@ -405,6 +410,7 @@ header {
       align-items: center;
     }
     &__title {
+
       text-transform: uppercase;
       font-family: 'Playfair Display', serif;
       letter-spacing: 0.1em;
@@ -412,6 +418,13 @@ header {
       line-height: px-to-rem(33px);
       text-align: center;
       margin-top: 30px;
+
+      @media (min-width: 768px) {
+        font-size: px-to-rem(45px);
+        line-height: px-to-rem(60px);
+        margin-top: 60px;
+      }
+
 
       @media (min-width: 992px) {
         font-size: px-to-rem(72px);
@@ -435,6 +448,9 @@ header {
     }
 
     &__subtitle {
+      @media (min-width: 768px) {
+        margin-bottom: 60px;
+      }
       @media (min-width: 1920px) {
         //font-size: calc(0.875rem + 0.8vw);
         font-size: calc(0.875rem * 1.4);

@@ -34,6 +34,16 @@ if (+width >= 1920) {
         spaceBetween: 60,
         mousewheel: true
     });
+} else if (+width >= 768 && +width < 992) {
+    const swiper = new Swiper('.swiper-1', {
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+        },
+        slidesPerView: 2.5,
+        spaceBetween: 20,
+        mousewheel: true
+    });
 } else {
     const swiper = new Swiper('.swiper-1', {
         slidesPerView: 1.5,

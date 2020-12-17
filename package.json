@@ -41,7 +41,8 @@
     "gulp-w3c-html-validator": "^2.0.1",
     "gulp-webp": "^4.0.1",
     "node-sass": "^4.14.1",
-    "postcss": "^8.1.1"
+    "postcss": "^8.1.1",
+    "postcss-animation": "0.0.12"
   },
   "dependencies": {
     "gulp-shorthand": "^1.1.0",
