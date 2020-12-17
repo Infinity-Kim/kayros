@@ -12,12 +12,13 @@
 
   @media (min-width: 992px) {
     flex-direction: row;
+    padding-top: 125px;
+    padding-bottom: 125px;
+    padding-left: 40px;
   }
 
   @media (min-width: 1400px) {
     padding-left: 80px;
-    padding-top: 125px;
-    padding-bottom: 113px;
   }
 
   @media (min-width: 1920px) {
@@ -63,8 +64,6 @@
     }
     @media (min-width: 992px) {
       text-align: left;
-      font-size: px-to-rem(36px);
-      line-height: px-to-rem(48px);
     }
   }
 
@@ -84,6 +83,7 @@
     }
 
     @media (min-width: 992px) {
+      max-width: 210px;
       text-align: left;
     }
   }

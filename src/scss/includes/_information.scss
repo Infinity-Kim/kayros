@@ -8,6 +8,7 @@
     padding-bottom: 70px;
   }
   @media (min-width: 992px) {
+    padding: 116px 40px;
     flex-direction: row;
   }
 
@@ -23,7 +24,7 @@
 
   &__left {
     @media (min-width: 992px) {
-      margin-right: 60px;
+      margin-right: 40px;
     }
     p {
       font-family: Playfair Display, serif;

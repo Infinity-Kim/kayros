@@ -38,24 +38,26 @@
       @media (min-width: 992px) {
         justify-content: center;
       }
-      @media (min-width: 1440px) {
-        //justify-content: space-between;
-      }
       .swiper-slide {
         width: auto!important;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        @media (min-width: 1440px) {
+        @media (min-width: 992px) {
           flex-grow: 1;
+          width: 200px!important;
+        }
+
+        @media (min-width: 1200px) {
+          width: auto!important;
         }
 
         &-img {
           font-size: 0;
           position: relative;
 
-          @media (min-width: 1440px) {
+          @media (min-width: 992px) {
             width: 100%;
           }
 

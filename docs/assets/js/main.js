@@ -30,7 +30,7 @@ if (+width >= 1920) {
             el: '.swiper-pagination',
             type: 'progressbar',
         },
-        slidesPerView: 2.5,
+        slidesPerView: 1.75,
         spaceBetween: 60,
         mousewheel: true
     });

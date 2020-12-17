@@ -43,6 +43,7 @@
       padding: 70px 20px;
     }
     @media (min-width: 992px) {
+      padding: 120px 40px;
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
@@ -92,6 +93,7 @@
       @media (min-width: 992px) {
         order: 1;
         align-items: flex-start;
+        margin-top: 0;
       }
     }
 
@@ -208,8 +210,12 @@
       padding: 70px 20px;
     }
 
+    @media (min-width: 992px) {
+      padding: 100px 40px;
+    }
+
     @media (min-width: 1400px) {
-      padding: 70px 80px;
+      padding: 100px 80px;
     }
 
     .top {
