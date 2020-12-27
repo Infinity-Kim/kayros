@@ -6,7 +6,7 @@ module.exports = () => {
                 pretty: true
             }))
             .pipe($.glp.htmlPrettify({indent_char: ' ', indent_size: 2}))
-            .pipe($.glp.w3cHtmlValidator())
+            //.pipe($.glp.w3cHtmlValidator())
             .pipe($.gulp.dest('./docs'))
             .pipe($.browserSync.reload({ stream: true }))
     });

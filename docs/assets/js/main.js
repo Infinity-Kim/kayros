@@ -1,5 +1,9 @@
 'use strict';
 
+const Scrollbar = window.Scrollbar;
+
+Scrollbar.init(document.querySelector('.main-scrollbar'));
+
 const width = document.documentElement.clientWidth;
 const btnTop = document.querySelector('.top'),
     footerLink = document.querySelectorAll('.toggle'),

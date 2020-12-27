@@ -13,6 +13,7 @@ body {
   @include min-max(375px, 100%, 0);
 }
 
+
 .wrap {
   @include min-max(375px, 1600px, 20px);
 }
@@ -48,3 +49,27 @@ body {
   letter-spacing: 0.05em;
   color: #333333;
 }
+
+.main-scrollbar {
+  height: 100vh;
+}
+
+body {
+  .scrollbar-track {
+    background: none;
+    transition: transform .3s, opacity .3s;
+
+    &:hover {
+      background: none!important;
+      transform: scaleX(1.45);
+    }
+  }
+
+  .scrollbar-thumb {
+    border-radius: 10px;
+    width: 7px;
+    cursor: grab;
+  }
+}
+
+
