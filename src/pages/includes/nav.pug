@@ -18,6 +18,7 @@ block nav
                 path(d="M82.6849 33.3129V39.9794H81.9202V33.3129H82.6849Z" fill="#B0976E")
                 path(d="M83.9956 39.9794V33.3129H84.7106L85.9421 36.4384C86.2201 37.1506 86.5677 38.0407 86.7961 38.7628C86.7365 37.7143 86.7067 36.8538 86.7067 35.6966V33.3129H87.392V39.9794H86.667L85.4058 36.7747C85.1377 36.1021 84.8596 35.3405 84.6212 34.5097C84.6808 35.3998 84.6908 36.2505 84.6908 37.6748V39.9794H83.9956Z" fill="#B0976E")
                 path(d="M92.0001 39.8112C91.6195 39.9569 91.216 40.0339 90.8084 40.0387C90.513 40.0539 90.2179 40.0031 89.9448 39.8902C89.6716 39.7773 89.4272 39.605 89.2294 39.3859C88.6472 38.6293 88.3644 37.6859 88.4349 36.7351C88.4349 34.1437 89.7657 33.2535 90.9474 33.2535C91.2888 33.2353 91.6296 33.2998 91.9405 33.4414L91.7717 34.0942C91.5298 33.9808 91.2642 33.9265 90.9971 33.936C90.1728 33.936 89.2592 34.5987 89.2592 36.6659C89.2592 38.7331 90.0437 39.3859 90.8481 39.3859C91.0076 39.3938 91.167 39.3668 91.3149 39.3068V37.1308H90.3714V36.4978H91.9604L92.0001 39.8112Z" fill="#B0976E")
+        .menu__right
             ul.nav
                 li.nav__item.catalog
                     svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
@@ -58,25 +59,25 @@ block nav
                     a.nav__link(href="#" title="Распродажа") Распродажа
                 li.nav__item
                     a.nav__link(href="#" title="Партнёрам") Партнёрам
-        .menu__right
             .menu__search
                 input(type="search")
                 svg(width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
                     circle(cx="6.5" cy="6.5" r="5.5" stroke="#333333" stroke-width="2")
                     rect(x="9" y="10.4142" width="2" height="7" transform="rotate(-45 9 10.4142)" fill="#333333")
-            .menu__account
+            .menu__account.icon
                 svg(width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg")
                     path(fill-rule="evenodd" clip-rule="evenodd" d="M18 20H20C20 15.5817 15.5228 12 10 12C4.47715 12 0 15.5817 0 20H2C2 17.0797 5.14219 14 10 14C14.8578 14 18 17.0797 18 20Z" fill="#333333")
                     circle(cx="10" cy="5" r="4" stroke="#333333" stroke-width="2")
-            .menu__cart
+            .menu__cart.icon
                 svg(width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg")
                     rect(x="6" y="1" width="8" height="10" rx="2" stroke="#333333" stroke-width="2")
                     path(d="M1 7C1 6.44772 1.44772 6 2 6H18C18.5523 6 19 6.44772 19 7V19C19 19.5523 18.5523 20 18 20H2C1.44772 20 1 19.5523 1 19V7Z" fill="white" stroke="#333333" stroke-width="2")
                 span.cart__total 5
-            .menu__hamburger
-                span
-                span
-                span
+            .menu__hamburger.icon
+                .list__icon
+                    span
+                    span
+                    span
         .menu__hamburger-aside
             .aside__header
                 svg.menu__logo(width="92" height="45" viewBox="0 0 92 45" fill="none" xmlns="http://www.w3.org/2000/svg")
