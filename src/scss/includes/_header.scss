@@ -14,8 +14,8 @@ header {
     flex-direction: column;
   }
   @media (min-width: 1400px) {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 90px;
+    margin-right: 90px;
   }
 
   .menu {
@@ -194,6 +194,12 @@ header {
       @media (min-width: 1024px) {
         display: flex;
         margin-top: 34px;
+        flex-grow: 1;
+        margin-left: 38px;
+      }
+
+      @media (min-width: 1400px) {
+        margin-left: 58px;
       }
 
       &__item {
@@ -336,7 +342,6 @@ header {
         display: flex;
         align-items: center;
         margin-right: 25px;
-        margin-left: 79px;
         margin-top: 28px;
         position: relative;
         height: 34px;
@@ -415,6 +420,9 @@ header {
       @media (min-width: 1024px) {
         margin-left: 61px;
         margin-top: 37px!important;
+      }
+      @media (min-width: 1400px) {
+        margin-left: 81px;
       }
 
       .list__icon {
