@@ -38,9 +38,12 @@ header {
         opacity: 1;
         visibility: visible;
         display: block;
+        @media (min-width: 1024px) {
+          display: flex;
+        }
       }
 
-      @media (min-width: 992px) {
+      @media (min-width: 1024px) {
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -50,17 +53,25 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 25px 20px;
+        padding: 27px 15px 22px 15px;
+
+        @media (min-width: 768px) {
+          padding: 27px 20px 22px 20px;
+        }
+
+        @media (min-width: 1024px) {
+          padding: 27px 40px 0 40px;
+        }
 
         @media (min-width: 1400px) {
-          padding: 25px 80px;
+          padding: 27px 90px 0 90px;
         }
 
         .aside__close {
           display: flex;
           align-items: center;
-          font-size: px-to-rem(11px);
-          line-height: px-to-rem(15px);
+          font-size: 11px;
+          line-height: 140%;
           letter-spacing: 0.05em;
           text-transform: uppercase;
           color: rgba(0, 0, 0, 0.7);
@@ -76,46 +87,106 @@ header {
       .aside__content {
         display: flex;
         flex-direction: column;
-        padding: 15px 20px 35px;
+        padding: 0 15px 35px 15px;
 
-        @media (min-width: 992px) {
+        @media (min-width: 768px) {
+          padding: 0 20px 64px 20px;
           flex-direction: row;
-          justify-content: space-between;
-
-          flex-grow: 1;
-          align-items: center;
+          flex-wrap: wrap;
         }
 
-        @media (min-width: 1200px) {
-          margin-left: calc(100px + 1vw);
-          margin-right: calc(100px + 1vw);
+        @media (min-width: 1024px) {
+          justify-content: space-between;
+          padding: 0 40px;
+          flex-grow: 1;
+          align-items: center;
+          flex-wrap: nowrap;
         }
 
         @media (min-width: 1400px) {
-          padding: 15px 80px 35px;
+          padding: 0 200px;
         }
 
         &-title {
           margin: 0 0 20px 0;
+          @media (min-width: 1024px) {
+            margin: 0 0 25px 0;
+          }
         }
 
         &-link {
           font-weight: bold;
-          font-size: px-to-rem(23px);
-          line-height: px-to-rem(37px);
+          font-size: 23px;
+          line-height: 160%;
           letter-spacing: 0.05em;
           text-transform: uppercase;
           color: #333333;
           text-decoration: none;
         }
 
+        .column-list {
+          display: flex;
+          flex-direction: column;
+          @media (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+          }
+          @media (min-width: 1024px) {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+
         &-column {
           display: flex;
           flex-direction: column;
 
-          @media (min-width: 992px) {
-            min-height: 465px;
+          @media (min-width: 768px) {
+            flex-basis: 50%;
           }
+
+          @media (min-width: 1024px) {
+            flex-basis: auto;
+          }
+
+          &:nth-child(1) {
+            .list {
+              @media (min-width: 768px) {
+                margin: 0;
+              }
+            }
+          }
+
+          &:nth-child(2) {
+            @media (min-width: 768px) {
+              order: 3;
+            }
+            @media (min-width: 1024px) {
+              order: 2;
+            }
+            .list {
+              @media (min-width: 1024px) {
+                margin: 0;
+                flex-grow: 1;
+              }
+            }
+          }
+
+          &:nth-child(3) {
+            @media (min-width: 768px) {
+              order: 2;
+            }
+            @media (min-width: 1024px) {
+              order: 3;
+            }
+            .list {
+              @media (min-width: 1024px) {
+                margin: 0 0 28px 0;
+              }
+            }
+          }
+
 
           .list {
             margin: 0 0 30px 0;
@@ -126,11 +197,15 @@ header {
               &:last-child {
                 margin-bottom: 0;
               }
+
+              @media (min-width: 1024px) {
+                margin-bottom: 15px;
+              }
             }
 
             &__link {
-              font-size: px-to-rem(18px);
-              line-height: px-to-rem(25px);
+              font-size: 18px;
+              line-height: 140%;
               color: rgba(0, 0, 0, 0.7);
               text-decoration: none;
               transition: 0.3s;
@@ -141,36 +216,46 @@ header {
             }
           }
 
-          .phone {
-            font-weight: bold;
-          }
-
           .partner {
             display: flex;
             text-decoration: none;
             align-items: center;
-            font-size: px-to-rem(16px);
-            line-height: px-to-rem(26px);
+            font-size: 23px;
+            line-height: 160%;
             font-weight: bold;
             letter-spacing: 0.05em;
             text-transform: uppercase;
             color: #333333;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
 
             .partner__icon {
               margin: 0 10px 0 0;
+              @media (min-width: 1024px) {
+                width: 20px;
+                height: 20px;
+              }
             }
 
-            @media (min-width: 992px) {
+            @media (min-width: 1024px) {
               display: none;
             }
 
             &.desktop {
               display: none;
 
-              @media (min-width: 992px) {
+              @media (min-width: 1024px) {
                 display: flex;
+                margin: 0;
               }
+            }
+          }
+
+          .phone {
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 0;
+            @media (min-width: 1024px) {
+              margin-top: 27px;
             }
           }
         }
