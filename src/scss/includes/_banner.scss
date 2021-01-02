@@ -1,22 +1,47 @@
+.no-webp {
+  .banner {
+    &__image {
+      background: url('../img/banner/bg.png') no-repeat center/cover;
+    }
+  }
+}
+
+.webp {
+  .banner {
+    &__image {
+      background: url('../img/banner/bg.webp') no-repeat center/cover;
+    }
+  }
+}
+
 .banner {
   position: relative;
 
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     background: #F1EBE2;
     padding: 80px 40px;
   }
 
   @media (min-width: 1400px) {
-    padding: 100px 80px;
+    padding: 190px 90px;
   }
 
-  @media (min-width: 1601px) {
-    padding: 100px 0;
+  @media (min-width: 1920px) {
+    padding: 0 90px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
   }
-
   &__image {
-    padding: 0;
-    img {
+    height: 333px;
+    @media (min-width: 768px) {
+      height: 464px;
+    }
+    @media (min-width: 1400px) {
+    height: 600px;
+  }
+    @media (min-width: 1920px) {
+      height: 787px;
       width: 100%;
     }
   }
