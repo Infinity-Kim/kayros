@@ -542,7 +542,7 @@ header {
   }
 
   .info {
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
       flex-grow: 1;
       display: flex;
       flex-direction: column;
@@ -554,30 +554,31 @@ header {
       text-transform: uppercase;
       font-family: 'Playfair Display', serif;
       letter-spacing: 0.1em;
-      font-size: px-to-rem(25px);
-      line-height: px-to-rem(33px);
+      font-size: 25px;
+      line-height: 33px;
       text-align: center;
-      margin-top: 30px;
+      margin-top: 42px;
 
       @media (min-width: 768px) {
-        font-size: px-to-rem(45px);
-        line-height: px-to-rem(60px);
-        margin-top: 60px;
+        font-size: 45px;
+        line-height: 60px;
+        margin-top: 50px;
       }
 
-      @media (min-width: 992px) {
+      @media (min-width: 1024px) {
         margin-top: 0;
-        font-size: px-to-rem(63px);
-        line-height: px-to-rem(84px);
+        font-size: 63px;
+        line-height: 84px;
       }
-      @media (min-width: 1200px) {
-        font-size: px-to-rem(72px);
-        line-height: px-to-rem(96px);
+
+      @media (min-width: 1400px) {
+        font-size: 72px;
+        line-height: 96px;
       }
 
       @media (min-width: 1920px) {
-        font-size: calc(4.5rem * 1.4);
-        line-height: calc(6rem * 1.4);
+        font-size: 90px;
+        line-height: 120px;
       }
 
       .hover {
@@ -595,21 +596,21 @@ header {
       @media (min-width: 768px) {
         margin-bottom: 60px;
       }
-      @media (min-width: 992px) {
+      @media (min-width: 1024px) {
         margin-top: 50px;
-        margin-bottom: 0;
+        margin-bottom: 50px;
       }
       @media (min-width: 1920px) {
-        //font-size: calc(0.875rem + 0.8vw);
-        font-size: calc(0.875rem * 1.4);
-        line-height: calc(1.375rem * 1.4);
+        margin-top: 47px;
+        margin-bottom: 72px;
+        font-size: 20px;
       }
       margin-top: 25px;
-      margin-bottom: 45px;
+      margin-bottom: 44px;
       text-transform: uppercase;
       text-align: center;
-      font-size: px-to-rem(14px);
-      line-height: px-to-rem(22px);
+      font-size: 14px;
+      line-height: 160%;
       letter-spacing: 0.1em;
       color: #777777;
     }
@@ -617,7 +618,7 @@ header {
     svg {
       display: none;
 
-      @media (min-width: 1200px) {
+      @media (min-width: 1024px) {
         display: block;
       }
     }
