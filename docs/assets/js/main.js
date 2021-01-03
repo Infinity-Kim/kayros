@@ -54,13 +54,13 @@ if (+width >= 1920) {
             el: '.swiper-pagination',
             type: 'progressbar',
         },
-        slidesPerView: 2.5,
+        slidesPerView: 2.15,
         spaceBetween: 20,
         mousewheel: true
     });
 } else {
     const swiper = new Swiper('.swiper-1', {
-        slidesPerView: 1.5,
+        slidesPerView: 1.70,
         spaceBetween: 20,
         mousewheel: true
     });
