@@ -1,8 +1,6 @@
 'use strict';
 
-const Scrollbar = window.Scrollbar;
-
-Scrollbar.init(document.querySelector('.main-scrollbar'));
+const scrollbar = window.Scrollbar.init(document.querySelector('.main-scrollbar'));
 const btnTop = document.querySelector('.top'),
     footerLink = document.querySelectorAll('.toggle'),
     burger = document.querySelector('.menu__hamburger'),
@@ -66,15 +64,7 @@ const swiper = new Swiper('.swiper-1', {
 });
 
 const up = () => {
-    alert('Нажатие');
-    window.scrollTo(0,0);
-    // let top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
-    // if (top > 0) {
-    //     window.scrollTo(0,0);
-    //     requestId = requestAnimationFrame(up);
-    // } else {
-    //     cancelAnimationFrame(requestId);
-    // }
+    scrollbar.scrollTo(0, 0, 1600);
 }
 
 const burgerShow = () => {
