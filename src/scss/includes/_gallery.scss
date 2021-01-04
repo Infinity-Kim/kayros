@@ -31,10 +31,12 @@
   }
 
   &__wrapper {
-    display: flex;
-    align-items: center;
-    padding-left: calc((100% - 1600px)/2);
-    height: 100vh;
+    @media (min-width: 1920px) {
+      display: flex;
+      align-items: center;
+      padding-left: calc((100% - 1600px)/2);
+      height: 100vh;
+    }
   }
 
   &__info {

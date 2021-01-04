@@ -13,13 +13,12 @@
 @mixin btn() {
   width: 100%;
   background-color: #F1EBE2;
-  font-size: px-to-rem(14px);
-  line-height: px-to-rem(22px);
+  font-size: 14px;
+  line-height: 160%;
   text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #B0976E;
-  border: 1px solid #B0976E;
   box-sizing: border-box;
   border-radius: 3px;
   cursor: pointer;

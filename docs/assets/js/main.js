@@ -10,7 +10,20 @@ const btnTop = document.querySelector('.top'),
 let requestId;
 const swiper2 = new Swiper('.swiper-2', {
     slidesPerView: 'auto',
-    spaceBetween: 25,
+    breakpoints: {
+        375: {
+            spaceBetween: 25
+        },
+        768: {
+            spaceBetween: 20
+        },
+        1024: {
+            spaceBetween: 30
+        },
+        1400: {
+            spaceBetween: 47
+        }
+    }
 });
 const swiper3 = new Swiper('.swiper-3', {
     slidesPerView: 'auto'
@@ -37,7 +50,7 @@ const swiper = new Swiper('.swiper-1', {
             slidesPerView: 1.85,
             spaceBetween: 60
         },
-        1400: {
+        1300: {
             slidesPerView: 2.85,
             spaceBetween: 60
         },
@@ -53,13 +66,15 @@ const swiper = new Swiper('.swiper-1', {
 });
 
 const up = () => {
-    let top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
-    if (top > 0) {
-        window.scrollBy(0,-100);
-        requestId = requestAnimationFrame(up);
-    } else {
-        cancelAnimationFrame(requestId);
-    }
+    alert('Нажатие');
+    window.scrollTo(0,0);
+    // let top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+    // if (top > 0) {
+    //     window.scrollTo(0,0);
+    //     requestId = requestAnimationFrame(up);
+    // } else {
+    //     cancelAnimationFrame(requestId);
+    // }
 }
 
 const burgerShow = () => {
@@ -77,8 +92,6 @@ const burgerClose = () => {
 btnTop.addEventListener('click', up);
 burger.addEventListener('click', burgerShow);
 burgerBtnClose.addEventListener('click', burgerClose);
-// catalogNav.addEventListener('mouseover', showCatalog)
-// catalogNav.addEventListener('mouseout', showCatalog)
 
 footerLink.forEach((e) => {
     e.addEventListener('click',(e) => {
