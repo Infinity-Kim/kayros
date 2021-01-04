@@ -3,13 +3,10 @@
 const Scrollbar = window.Scrollbar;
 
 Scrollbar.init(document.querySelector('.main-scrollbar'));
-
-const width = document.documentElement.clientWidth;
 const btnTop = document.querySelector('.top'),
     footerLink = document.querySelectorAll('.toggle'),
     burger = document.querySelector('.menu__hamburger'),
     burgerBtnClose = document.querySelector('.aside__close');
-    // catalogNav = document.querySelector('.nav__link.catalog');
 let requestId;
 const swiper2 = new Swiper('.swiper-2', {
     slidesPerView: 'auto',
@@ -18,53 +15,42 @@ const swiper2 = new Swiper('.swiper-2', {
 const swiper3 = new Swiper('.swiper-3', {
     slidesPerView: 'auto'
 });
-if (+width >= 1920) {
-    const swiper = new Swiper('.swiper-1', {
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'progressbar',
+const swiper = new Swiper('.swiper-1', {
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+    },
+    setWrapperSize: true,
+    autoHeight: true,
+    freeMode: true,
+    mousewheel: true,
+    breakpoints: {
+        375: {
+            slidesPerView: 1.70,
+            spaceBetween: 20
         },
-        slidesPerView: 2.5,
-        spaceBetween: 80,
-        mousewheel: true,
-    });
-}else if (+width >= 1200 && +width < 1920) {
-    const swiper = new Swiper('.swiper-1', {
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'progressbar',
+        768: {
+            slidesPerView: 2.15,
+            spaceBetween: 20
         },
-        slidesPerView: 2.5,
-        spaceBetween: 60,
-        mousewheel: true
-    });
-} else if (+width >= 992 && +width < 1200) {
-    const swiper = new Swiper('.swiper-1', {
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'progressbar',
+        1024: {
+            slidesPerView: 1.85,
+            spaceBetween: 60
         },
-        slidesPerView: 1.75,
-        spaceBetween: 60,
-        mousewheel: true
-    });
-} else if (+width >= 768 && +width < 992) {
-    const swiper = new Swiper('.swiper-1', {
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'progressbar',
+        1400: {
+            slidesPerView: 2.85,
+            spaceBetween: 60
         },
-        slidesPerView: 2.15,
-        spaceBetween: 20,
-        mousewheel: true
-    });
-} else {
-    const swiper = new Swiper('.swiper-1', {
-        slidesPerView: 1.70,
-        spaceBetween: 20,
-        mousewheel: true
-    });
-}
+        1920: {
+            slidesPerView: 2.5,
+            spaceBetween: 80
+        },
+        2560: {
+            slidesPerView: 3.25,
+            spaceBetween: 80
+        }
+    }
+});
 
 const up = () => {
     let top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
@@ -87,14 +73,6 @@ const burgerClose = () => {
 
     burgerAside.classList.remove('active');
 }
-
-// const showCatalog = (e) => {
-//     let menuHover = document.querySelector('.menu__hover');
-//
-//     menuHover.classList.toggle('active');
-//
-//     console.log(e.relatedTarget);
-// }
 
 btnTop.addEventListener('click', up);
 burger.addEventListener('click', burgerShow);
