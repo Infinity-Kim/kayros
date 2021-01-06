@@ -9,7 +9,7 @@ let requestId;
 const swiper2 = new Swiper('.swiper-2', {
     slidesPerView: 'auto',
     breakpoints: {
-        375: {
+        320: {
             spaceBetween: 25
         },
         768: {
@@ -36,7 +36,7 @@ const swiper = new Swiper('.swiper-1', {
     freeMode: true,
     mousewheel: true,
     breakpoints: {
-        375: {
+        320: {
             slidesPerView: 1.70,
             spaceBetween: 20
         },

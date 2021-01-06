@@ -10,12 +10,12 @@ body {
 }
 
 .container {
-  @include min-max(375px, 100%, 0);
+  @include min-max(320px, 100%, 0);
 }
 
 
 .wrap {
-  @include min-max(375px, 1600px, 20px);
+  @include min-max(320px, 1600px, 20px);
 }
 
 .swiper-container {
