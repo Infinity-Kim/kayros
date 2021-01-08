@@ -1,6 +1,8 @@
 'use strict';
-new WOW().init();
-// const scrollbar = window.Scrollbar.init(document.querySelector('.main-scrollbar'));
+
+//const scrollbar = window.Scrollbar.init(document.querySelector('.main-scrollbar'));
+new WOW({}).init();
+//wow.init();
 const btnTop = document.querySelector('.top'),
     footerLink = document.querySelectorAll('.toggle'),
     burger = document.querySelector('.menu__hamburger'),
@@ -84,7 +86,7 @@ burger.addEventListener('click', burgerShow);
 burgerBtnClose.addEventListener('click', burgerClose);
 
 footerLink.forEach((e) => {
-    e.addEventListener('click',(e) => {
+    e.addEventListener('click', (e) => {
         e.preventDefault();
 
         let path = e.target.querySelector('path');
