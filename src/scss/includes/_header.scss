@@ -268,7 +268,7 @@ header {
       margin-top: 27px;
 
       .menu__logo {
-        animation: fadeIn 3s;
+        animation: fadeIn 500ms;
       }
     }
 
@@ -293,8 +293,17 @@ header {
         align-items: center;
         cursor: pointer;
 
+        &:nth-child(3) {
+          .nav__link {
+            animation: fadeIn 1s;
+            animation-delay: 100ms;
+          }
+        }
+
         &:nth-child(4) {
           .nav__link {
+            animation: fadeIn 1033ms;
+            animation-delay: 100ms;
             margin-right: 0;
           }
         }
@@ -303,7 +312,8 @@ header {
         &.catalog {
 
           .nav__link {
-            animation: fadeIn 3s;
+            animation: fadeIn 700ms;
+            animation-delay: 100ms;
           }
           &:hover {
             padding-bottom: 40px;
@@ -398,7 +408,8 @@ header {
         }
 
         svg {
-          animation: rotateIn 3s;
+          animation: rotateIn 733ms;
+          animation-delay: 100ms;
           margin-right: 9px;
         }
       }
@@ -441,6 +452,7 @@ header {
       }
 
       input {
+        animation: fadeIn 933ms;
         height: 34px;
         padding: 9px 26px 9px 10px;
         font-size: 14px;
@@ -456,6 +468,7 @@ header {
       }
 
       svg {
+        animation: fadeIn 933ms;
         cursor: pointer;
         position: absolute;
         right: 13px;

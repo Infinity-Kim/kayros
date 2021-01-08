@@ -35,6 +35,7 @@
 
   &__image {
     height: 333px;
+    animation: zoomIn 1.1s;
     @media (min-width: 768px) {
       height: 464px;
     }
