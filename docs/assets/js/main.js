@@ -1,7 +1,9 @@
 'use strict';
 
 //const scrollbar = window.Scrollbar.init(document.querySelector('.main-scrollbar'));
-new WOW({}).init();
+new WOW({
+    //scrollContainer: ".scroll-content"
+}).init();
 //wow.init();
 const btnTop = document.querySelector('.top'),
     footerLink = document.querySelectorAll('.toggle'),

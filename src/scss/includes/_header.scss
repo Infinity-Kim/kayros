@@ -296,14 +296,12 @@ header {
         &:nth-child(3) {
           .nav__link {
             animation: fadeInLeft 1s;
-            animation-delay: 100ms;
           }
         }
 
         &:nth-child(4) {
           .nav__link {
             animation: fadeInLeft 1033ms;
-            animation-delay: 100ms;
             margin-right: 0;
           }
         }
@@ -313,7 +311,6 @@ header {
 
           .nav__link {
             animation: fadeIn 700ms;
-            animation-delay: 100ms;
           }
           &:hover {
             padding-bottom: 40px;
