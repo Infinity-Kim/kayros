@@ -308,12 +308,13 @@ header {
 
 
         &.catalog {
+          padding-bottom: 40px;
 
           .nav__link {
             animation: fadeIn 700ms;
           }
           &:hover {
-            padding-bottom: 40px;
+
             .menu__hover {
               opacity: 1;
               visibility: visible;
