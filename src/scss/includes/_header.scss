@@ -165,6 +165,7 @@ header {
             @media (min-width: 1024px) {
               order: 2;
             }
+
             .list {
               @media (min-width: 1024px) {
                 margin: 0;
@@ -180,6 +181,7 @@ header {
             @media (min-width: 1024px) {
               order: 3;
             }
+
             .list {
               @media (min-width: 1024px) {
                 margin: 0 0 28px 0;
@@ -268,7 +270,7 @@ header {
       margin-top: 27px;
 
       .menu__logo {
-        animation: fadeIn 500ms;
+        animation: fadeIn 666ms;
       }
     }
 
@@ -295,13 +297,30 @@ header {
 
         &:nth-child(3) {
           .nav__link {
-            animation: fadeInLeft 1s;
+            animation: fadeInLeft5 666ms;
+            animation-delay: 300ms;
+            opacity: 0;
+            animation-fill-mode: forwards;
+
+            @keyframes fadeInLeft5 {
+              from {
+                opacity: 0;
+                transform: translate3d(-5px, 0, 0);
+              }
+              to {
+                opacity: 1;
+                transform: none;
+              }
+            }
           }
         }
 
         &:nth-child(4) {
           .nav__link {
-            animation: fadeInLeft 1033ms;
+            animation: fadeInLeft5 666ms;
+            animation-delay: 400ms;
+            opacity: 0;
+            animation-fill-mode: forwards;
             margin-right: 0;
           }
         }
@@ -311,8 +330,12 @@ header {
           padding-bottom: 40px;
 
           .nav__link {
-            animation: fadeIn 700ms;
+            animation: fadeIn 666ms;
+            animation-delay: 200ms;
+            opacity: 0;
+            animation-fill-mode: forwards;
           }
+
           &:hover {
 
             .menu__hover {
@@ -321,13 +344,14 @@ header {
               transition: 0.3s;
             }
 
-            +.overlay {
+            + .overlay {
               display: block;
               opacity: 1;
               visibility: visible;
               transition: 0.3s;
             }
           }
+
           .menu__hover {
             opacity: 0;
             visibility: hidden;
@@ -365,6 +389,7 @@ header {
               @media (min-width: 1400px) {
                 margin: 0 55px 0 240px;
               }
+
               &__item {
                 margin-bottom: 18px;
 
@@ -387,10 +412,11 @@ header {
             }
           }
 
-          +.overlay {
+          + .overlay {
             opacity: 0;
             visibility: hidden;
             display: none;
+
             &:before {
               content: '';
               background: #121212;
@@ -406,9 +432,11 @@ header {
         }
 
         svg {
-          animation: rotateIn 733ms;
+          animation: rotateIn 666ms;
           animation-delay: 100ms;
+          animation-fill-mode: forwards;
           margin-right: 9px;
+          opacity: 0;
         }
       }
 
@@ -441,6 +469,11 @@ header {
       display: none;
 
       @media (min-width: 1024px) {
+        animation: fadeInLeft5 666ms;
+        animation-delay: 500ms;
+        opacity: 0;
+        animation-fill-mode: forwards;
+
         display: flex;
         align-items: center;
         margin-right: 25px;
@@ -450,7 +483,6 @@ header {
       }
 
       input {
-        animation: fadeIn 933ms;
         height: 34px;
         padding: 9px 26px 9px 10px;
         font-size: 14px;
@@ -466,7 +498,6 @@ header {
       }
 
       svg {
-        animation: fadeIn 933ms;
         cursor: pointer;
         position: absolute;
         right: 13px;
@@ -491,12 +522,25 @@ header {
     &__account {
       margin-right: 5px;
       @media (min-width: 1024px) {
+        animation: fadeInLeft5 666ms;
+        animation-delay: 600ms;
+        opacity: 0;
+        animation-fill-mode: forwards;
+
         margin-right: 25px;
       }
     }
 
     &__cart {
       position: relative;
+      svg {
+        @media (min-width: 1024px) {
+          animation: fadeInLeft5 666ms;
+          animation-delay: 700ms;
+          opacity: 0;
+          animation-fill-mode: forwards;
+        }
+      }
 
       .cart__total {
         position: absolute;
@@ -515,6 +559,10 @@ header {
         @media (min-width: 1024px) {
           right: -9px;
           top: -4px;
+          animation: fadeInLeft5 666ms;
+          animation-delay: 800ms;
+          opacity: 0;
+          animation-fill-mode: forwards;
         }
       }
     }
@@ -523,7 +571,11 @@ header {
       margin-left: 30px;
       @media (min-width: 1024px) {
         margin-left: 61px;
-        margin-top: 37px!important;
+        margin-top: 37px !important;
+        animation: fadeInLeft5 666ms;
+        animation-delay: 900ms;
+        opacity: 0;
+        animation-fill-mode: forwards;
       }
       @media (min-width: 1400px) {
         margin-left: 81px;
@@ -532,6 +584,7 @@ header {
       .list__icon {
         display: flex;
         flex-direction: column;
+
         span {
           display: block;
           background-color: $black;
@@ -560,6 +613,7 @@ header {
       justify-content: center;
       align-items: center;
     }
+
     &__title {
 
       text-transform: uppercase;
@@ -601,6 +655,7 @@ header {
         cursor: pointer;
         transition: 0.3s;
         border-bottom: 1px solid rgba(176, 151, 110, 0.4);
+
         &:hover {
           color: #B0976E;
           border-bottom: 1px solid rgba(176, 151, 110, 0.4);
