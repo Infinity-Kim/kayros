@@ -31,7 +31,12 @@
 }
 
 .instagram {
-  animation: fadeInUp 900ms;
+  @media (min-width: 1024px) {
+    animation-delay: 833ms;
+    animation: fadeInUp10 666ms;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
   display: flex;
   .swiper-container {
     .swiper-wrapper {
