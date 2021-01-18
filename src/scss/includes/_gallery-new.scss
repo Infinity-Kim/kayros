@@ -64,6 +64,7 @@
     color: #333333;
     margin-bottom: 35px;
 
+
     @media (min-width: 768px) {
       font-size: 36px;
       line-height: 48px;
@@ -72,6 +73,9 @@
     }
 
     @media (min-width: 1024px) {
+      animation: fadeInUp10 666ms;
+      opacity: 0;
+      animation-fill-mode: forwards;
       margin-right: 0;
       margin-bottom: 96px;
     }
