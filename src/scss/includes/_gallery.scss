@@ -204,7 +204,9 @@
     .swiper-wrapper {
       .swiper-slide {
         &:nth-child(1) {
+          display: none;
           @media (min-width: 1024px) {
+            display: flex;
             .swiper-pagination-progressbar-fill {
               width: 50px;
               animation: rightTo 3s infinite alternate;
