@@ -1,15 +1,6 @@
 'use strict';
-// new WOW({
-//     scrollContainer: '.main-scrollbar'
-// }).init();
-AOS.init({
-    useClassNames: true,
-    initClassName: false,
-    animatedClassName: 'animated',
-});
-
-// const scrollbar = window.Scrollbar.init(document.querySelector('.main-scrollbar'), {
-// });
+new WOW({}).init();
+//const scrollbar = window.Scrollbar.init(document.querySelector('.main-scrollbar'));
 
 const btnTop = document.querySelector('.top'),
     footerLink = document.querySelectorAll('.toggle'),
@@ -113,3 +104,4 @@ footerLink.forEach((e) => {
         menu.classList.toggle('active');
     })
 })
+
