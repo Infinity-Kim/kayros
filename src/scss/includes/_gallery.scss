@@ -65,6 +65,7 @@
     }
 
     .swiper-pagination {
+
       display: none;
       height: 2px;
       position: relative;
@@ -72,6 +73,7 @@
         background: rgba(176, 151, 110, 0.7);
       }
       @media (min-width: 1024px) {
+        overflow:hidden;
         display: block;
         animation: fadeIn 666ms;
         opacity: 0;
@@ -208,15 +210,17 @@
           @media (min-width: 1024px) {
             display: flex;
             .swiper-pagination-progressbar-fill {
-              width: 50px;
-              animation: rightTo 3s infinite alternate;
+              animation: rightTo 5s infinite;
             }
             @keyframes rightTo {
-              from {
-                transform: translate3d(0px, 0px, 0px);
+              0% {
+                transform: scaleX(0);
               }
-              to {
-                transform: translate3d(147px, 0px, 0px);
+              25% {
+                transform: scaleX(1);
+              }
+              100% {
+                transform: translateX(197px);
               }
             }
           }
