@@ -1,7 +1,15 @@
 'use strict';
-new WOW({
-}).init();
-//const scrollbar = window.Scrollbar.init(document.querySelector('.main-scrollbar'));
+// new WOW({
+//     scrollContainer: '.main-scrollbar'
+// }).init();
+AOS.init({
+    useClassNames: true,
+    initClassName: false,
+    animatedClassName: 'animated',
+});
+
+// const scrollbar = window.Scrollbar.init(document.querySelector('.main-scrollbar'), {
+// });
 
 const btnTop = document.querySelector('.top'),
     footerLink = document.querySelectorAll('.toggle'),
