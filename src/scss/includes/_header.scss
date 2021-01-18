@@ -9,7 +9,7 @@ header {
   @media (min-width: 1024px) {
     margin-left: 40px;
     margin-right: 40px;
-    height: calc(100vh - 10px);
+    height: 100vh;
     display: flex;
     flex-direction: column;
   }
@@ -652,6 +652,8 @@ header {
       }
 
       &-1 {
+        display: flex;
+        justify-content: center;
         @media (min-width: 1024px) {
           animation: fadeInUp30 666ms;
           animation-delay: 500ms;
@@ -680,13 +682,36 @@ header {
       }
 
       .hover {
+        color: $black;
+        position: relative;
+        text-decoration: none;
+        picture {
+          display: none;
+          position: absolute;
+          z-index: 1;
+          @media (min-width: 1024px) {
+            display: block;
+            top: -50px;
+            opacity: 0;
+            animation-fill-mode: forwards;
+          }
+        }
         cursor: pointer;
         transition: 0.3s;
         border-bottom: 1px solid rgba(176, 151, 110, 0.4);
-
+        p {
+          position: relative;
+          z-index: 2;
+          &:hover {
+            color: #B0976E;
+            border-bottom: 1px solid rgba(176, 151, 110, 0.4);
+          }
+        }
         &:hover {
-          color: #B0976E;
-          border-bottom: 1px solid rgba(176, 151, 110, 0.4);
+          picture {
+            animation: fadeIn 666ms;
+            animation-fill-mode: forwards;
+          }
         }
       }
     }

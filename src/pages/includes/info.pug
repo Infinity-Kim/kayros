@@ -1,10 +1,20 @@
 block info
     section.info
-        h2.info__title
+        div.info__title
             .info__title-1
-                span.hover Женская
+                a.hover(href="javascript:void(0);")
+                    p Женская
+                    picture
+                        source(srcset="assets/img/swipe/item-1.webp" type="image/webp")
+                        source(srcset="assets/img/swipe/item-1.png" type="image/png")
+                        img(src="assets/img/swipe/item-1.png")
                 span &nbsp;и&nbsp;
-                span.hover Мужская <br>
+                a.hover(href="javascript:void(0);")
+                    p Мужская
+                    picture
+                        source(srcset="assets/img/swipe/item-1.webp" type="image/webp")
+                        source(srcset="assets/img/swipe/item-1.png" type="image/png")
+                        img(src="assets/img/swipe/item-1.png")
             .info__title-2
                 span Одежда из льна
         p.info__subtitle Комфорт всегда рядом

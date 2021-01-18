@@ -70,14 +70,19 @@
       .swiper-pagination-progressbar-fill {
         background: rgba(176, 151, 110, 0.7);
       }
-
-      @media (min-width: 992px) {
+      @media (min-width: 1024px) {
         display: block;
+        animation: fadeIn 666ms;
+        opacity: 0;
+        animation-fill-mode: forwards;
+        animation-delay: 200ms;
       }
     }
   }
 
   &__title {
+    display: flex;
+    justify-content: center;
     text-transform: uppercase;
     font-family: Playfair Display, serif;
     font-size: 21px;
@@ -90,12 +95,46 @@
       line-height: 48px;
     }
     @media (min-width: 1024px) {
+      flex-direction: column;
       text-align: left;
       max-width: 200px;
+    }
+
+    p {
+      margin-right: 10px;
+      &:nth-child(1) {
+        @media (min-width: 1024px) {
+          animation: fadeInUp10 666ms;
+          opacity: 0;
+          animation-fill-mode: forwards;
+        }
+      }
+      &:nth-child(2) {
+        @media (min-width: 1024px) {
+          animation: fadeInUp10 666ms;
+          opacity: 0;
+          animation-fill-mode: forwards;
+          animation-delay: 100ms;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+        @media (min-width: 1024px) {
+          animation: fadeInUp10 666ms;
+          opacity: 0;
+          animation-fill-mode: forwards;
+          animation-delay: 200ms;
+        }
+      }
+      @media (min-width: 1024px) {
+        margin-right: 0;
+      }
     }
   }
 
   &__subtitle {
+    display: flex;
+    justify-content: center;
     margin-top: 25px;
     margin-bottom: 44px;
     text-transform: uppercase;
@@ -110,9 +149,47 @@
       margin-bottom: 70px;
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
       max-width: 210px;
+      flex-direction: column;
       text-align: left;
+    }
+
+    p {
+      margin-right: 10px;
+      &:nth-child(1) {
+        @media (min-width: 1024px) {
+          animation: fadeInUp10 666ms;
+          opacity: 0;
+          animation-fill-mode: forwards;
+          animation-delay: 100ms;
+        }
+      }
+      &:nth-child(2) {
+        @media (min-width: 1024px) {
+          animation: fadeInUp10 666ms;
+          opacity: 0;
+          animation-fill-mode: forwards;
+          animation-delay: 200ms;
+        }
+      }
+      &:nth-child(3) {
+        @media (min-width: 1024px) {
+          animation: fadeInUp10 666ms;
+          opacity: 0;
+          animation-fill-mode: forwards;
+          animation-delay: 300ms;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+        @media (min-width: 1024px) {
+          animation: fadeInUp10 666ms;
+          opacity: 0;
+          animation-fill-mode: forwards;
+          animation-delay: 400ms;
+        }
+      }
     }
   }
 
@@ -125,6 +202,70 @@
     }
     .swiper-wrapper {
       .swiper-slide {
+        &:nth-child(1) {
+          @media (min-width: 1024px) {
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+            animation: heightUp 666ms;
+            animation-fill-mode: forwards;
+            animation-delay: 400ms;
+          }
+        }
+        &:nth-child(2) {
+          @media (min-width: 1024px) {
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+            animation: heightUp 666ms;
+            animation-fill-mode: forwards;
+            animation-delay: 733ms;
+          }
+        }
+        &:nth-child(3) {
+          @media (min-width: 1024px) {
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+            animation: heightUp 666ms;
+            animation-fill-mode: forwards;
+            animation-delay: 1066ms;
+          }
+        }
+        &:nth-child(4) {
+          @media (min-width: 1024px) {
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+            animation: heightUp 666ms;
+            animation-fill-mode: forwards;
+            animation-delay: 1399ms;
+          }
+        }
+        &:nth-child(5) {
+          @media (min-width: 1024px) {
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+            animation: heightUp 666ms;
+            animation-fill-mode: forwards;
+            animation-delay: 1732ms;
+          }
+        }
+        &:nth-child(6) {
+          @media (min-width: 1024px) {
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+            animation: heightUp 666ms;
+            animation-fill-mode: forwards;
+            animation-delay: 2065ms;
+          }
+        }
+        &:nth-child(7) {
+          @media (min-width: 1024px) {
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+            animation: heightUp 666ms;
+            animation-fill-mode: forwards;
+            animation-delay: 2398ms;
+          }
+        }
+        @keyframes heightUp {
+          from {
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          }
+          to {
+            clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+          }
+        }
         &-img {
           width: 100%;
           text-decoration: none;

@@ -1,14 +1,13 @@
 'use strict';
-
-//const scrollbar = window.Scrollbar.init(document.querySelector('.main-scrollbar'));
 new WOW({
-    //scrollContainer: ".scroll-content"
 }).init();
-//wow.init();
+//const scrollbar = window.Scrollbar.init(document.querySelector('.main-scrollbar'));
+
 const btnTop = document.querySelector('.top'),
     footerLink = document.querySelectorAll('.toggle'),
     burger = document.querySelector('.menu__hamburger'),
-    burgerBtnClose = document.querySelector('.aside__close');
+    burgerBtnClose = document.querySelector('.aside__close'),
+    titles = document.querySelectorAll('.hover');
 let requestId;
 const swiper2 = new Swiper('.swiper-2', {
     slidesPerView: 'auto',
