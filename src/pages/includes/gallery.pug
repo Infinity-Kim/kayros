@@ -1,7 +1,7 @@
 block gallery
     .gallery__wrapper
         section.gallery
-            .gallery__info
+            .gallery__info.mobile
                 .info
                     h2.gallery__title
                         p.wow.fadeInUp10 Льняная
@@ -15,6 +15,19 @@ block gallery
                 .swiper-pagination.wow.fadeIn
             .swiper-container.swiper-1
                 .swiper-wrapper
+                    .swiper-slide
+                        .gallery__info.desktop
+                            .info
+                                h2.gallery__title
+                                    p.wow.fadeInUp10 Льняная
+                                    p.wow.fadeInUp10 одежда
+                                    p.wow.fadeInUp10 Kayros
+                                .gallery__subtitle
+                                    p.wow.fadeInUp10 ЭЛЕГАНТНЫЙ ОБРАЗ
+                                    p.wow.fadeInUp10 нужен каждому,
+                                    p.wow.fadeInUp10 У НАС ЕСТЬ
+                                    p.wow.fadeInUp10 ВСё НЕОБХОДИМОЕ
+                            .swiper-pagination.wow.fadeIn
                     .swiper-slide.wow.heightUp
                         a.swiper-slide-img(href="#")
                             picture

@@ -40,27 +40,28 @@
   }
 
   &__info {
+    &.mobile {
+      @media (min-width: 1024px) {
+        display: none;
+      }
+    }
+    &.desktop {
+      display: none;
+      @media (min-width: 1024px) {
+        display: flex;
+        height: 100%;
+      }
+    }
     margin-right: 15px;
     @media (min-width: 768px) {
       margin-right: 20px;
     }
     @media (min-width: 1024px) {
-      display: flex;
       justify-content: space-between;
       flex-direction: column;
-      margin-bottom: 73px;
-      padding-top: 113px;
-    }
-    @media (min-width: 1024px) {
-      margin-right: 136px;
-    }
-    @media (min-width: 1400px) {
-      margin-right: 108px;
-    }
-    @media (min-width: 1920px) {
+      margin-bottom: 0;
       padding-top: 0;
-      margin-bottom: 85px;
-      margin-right: 288px;
+      margin-right: 0;
     }
 
     .swiper-pagination {
@@ -204,10 +205,18 @@
       .swiper-slide {
         &:nth-child(1) {
           @media (min-width: 1024px) {
-            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-            animation: heightUp 666ms;
-            animation-fill-mode: forwards;
-            animation-delay: 400ms;
+            .swiper-pagination-progressbar-fill {
+              width: 50px;
+              animation: rightTo 3s infinite alternate;
+            }
+            @keyframes rightTo {
+              from {
+                transform: translate3d(0px, 0px, 0px);
+              }
+              to {
+                transform: translate3d(147px, 0px, 0px);
+              }
+            }
           }
         }
         &:nth-child(2) {
@@ -215,7 +224,7 @@
             clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
             animation: heightUp 666ms;
             animation-fill-mode: forwards;
-            animation-delay: 733ms;
+            animation-delay: 400ms;
           }
         }
         &:nth-child(3) {
@@ -223,7 +232,7 @@
             clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
             animation: heightUp 666ms;
             animation-fill-mode: forwards;
-            animation-delay: 1066ms;
+            animation-delay: 733ms;
           }
         }
         &:nth-child(4) {
@@ -231,7 +240,7 @@
             clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
             animation: heightUp 666ms;
             animation-fill-mode: forwards;
-            animation-delay: 1399ms;
+            animation-delay: 1066ms;
           }
         }
         &:nth-child(5) {
@@ -239,7 +248,7 @@
             clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
             animation: heightUp 666ms;
             animation-fill-mode: forwards;
-            animation-delay: 1732ms;
+            animation-delay: 1399ms;
           }
         }
         &:nth-child(6) {
@@ -247,10 +256,18 @@
             clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
             animation: heightUp 666ms;
             animation-fill-mode: forwards;
-            animation-delay: 2065ms;
+            animation-delay: 1732ms;
           }
         }
         &:nth-child(7) {
+          @media (min-width: 1024px) {
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+            animation: heightUp 666ms;
+            animation-fill-mode: forwards;
+            animation-delay: 2065ms;
+          }
+        }
+        &:nth-child(8) {
           @media (min-width: 1024px) {
             clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
             animation: heightUp 666ms;
