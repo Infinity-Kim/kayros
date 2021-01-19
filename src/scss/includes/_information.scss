@@ -88,6 +88,12 @@
         line-height: 160%;
         color: #B0976E;
         text-decoration: none;
+        &:hover, &:focus {
+          border-bottom: 1px solid rgba(176, 151, 110, 0.4);
+        }
+        &:active {
+          border-bottom: 1px solid rgba(146, 125, 84, 0.4);
+        }
 
         @media (min-width: 768px) {
           font-size: 16px;
@@ -145,6 +151,14 @@
         line-height: 160%;
         color: #B0976E;
         opacity: 0.8;
+
+        &:hover, &:focus {
+          border: 1px solid rgba(176, 151, 110, 0.4);
+        }
+
+        &:active {
+          border-bottom: 1px solid rgba(146, 125, 84, 0.4);
+        }
         @media (min-width: 992px) {
           font-size: 16px;
         }
