@@ -77,6 +77,14 @@
       flex-direction: column;
       align-items: center;
 
+      .social {
+        svg {
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+
       .copyright {
         margin-bottom: 30px;
         font-size: 12px;
@@ -248,7 +256,7 @@
       border: 0;
 
       &:hover {
-        background-color: #D5D4D2;
+        background: rgba(176, 151, 110, 0.75);
       }
 
       &:focus {

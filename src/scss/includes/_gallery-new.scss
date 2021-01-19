@@ -262,7 +262,7 @@
     margin-top: 40px;
     margin-right: 15px;
     margin-left: 15px;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 160%;
     text-align: center;
     letter-spacing: 0.1em;
@@ -275,12 +275,22 @@
     display: block;
     padding: 13px 0 13px 0;
     text-decoration: none;
+
+    &:hover, &:focus {
+      background: #B0976E;
+      color: #FFFFFF;
+    }
+
+    &:active {
+      background: #927D54;
+      border: 1px solid #927D54;
+      color: #FFFFFF;
+    }
+
     @media (min-width: 768px) {
       margin-top: 60px;
       margin-right: 20px;
       margin-left: 20px;
-      font-size: 15px;
-      line-height: 160%;
       max-width: 280px;
     }
     @media (min-width: 1024px) {
