@@ -34,67 +34,73 @@
 
 .footer {
   &-navigation {
-
-    padding: 42px 15px 50px 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background: #F1EBE2;
+    padding: 36px 15px 50px 15px;
+
     @media (min-width: 768px) {
-      padding: 70px 20px;
+      padding: 60px 20px 70px 20px;
     }
+
     @media (min-width: 1024px) {
-      padding: 120px 40px;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
+      padding: 125px 40px;
     }
     @media (min-width: 1400px) {
-      padding: 120px 90px;
+      padding: 125px 90px;
+    }
+    @media (min-width: 1400px) {
+      padding: 125px 0;
     }
 
     &__wrapper {
-      padding: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%;
+      padding: 0;
       @media (min-width: 1024px) {
         flex-direction: row;
-        justify-content: space-between;
         align-items: flex-start;
+        justify-content: space-between;
       }
     }
 
-    &__right {
-      order: 1;
+    &__item {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
+      min-width: 220px;
       @media (min-width: 1024px) {
         order: 2;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-grow: 1;
-        align-items: flex-start;
-        margin-left: 42px;
+        width: 100%;
+        max-width: 206px;
+        min-width: 0;
+        animation: fadeInUp10 666ms forwards;
+        opacity: 0;
       }
       @media (min-width: 1400px) {
-        margin-left: 155px;
+        max-width: 275px;
       }
       @media (min-width: 1920px) {
-        margin-left: 216px;
+        max-width: 340px;
       }
-    }
+      &.contacts {
+        margin-top: 43px;
+        align-items: center;
+        @media (min-width: 768px) {
+          margin-top: 50px;
+        }
+        @media (min-width: 1024px) {
+          margin: 0;
+          order: 1;
+          align-items: flex-start;
+        }
+      }
 
-    &__contacts {
-      animation: fadeInUp10 666ms;
-      opacity: 0;
-      animation-fill-mode: forwards;
-      order: 2;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      .phone {
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 15px;
+      }
 
       .social {
         svg {
@@ -112,56 +118,8 @@
       }
 
       .menu__logo {
-        @media (min-width: 768px) {
-          margin-bottom: 20px;
-        }
-      }
-
-      @media (min-width: 768px) {
-        margin-top: 50px;
-      }
-
-      @media (min-width: 992px) {
-        order: 1;
-        align-items: flex-start;
-        margin-top: 0;
-      }
-    }
-
-    &__catalog {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      min-width: 220px;
-      @media (min-width: 1024px) {
-        min-width: 0;
-        animation: fadeInUp10 666ms;
-        opacity: 0;
-        animation-fill-mode: forwards;
-      }
-    }
-    &__support {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      min-width: 220px;
-      @media (min-width: 1024px) {
-        min-width: 0;
-        animation: fadeInUp10 666ms;
-        opacity: 0;
-        animation-fill-mode: forwards;
-      }
-    }
-    &__company {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      min-width: 220px;
-      @media (min-width: 1024px) {
-        min-width: 0;
-        animation: fadeInUp10 666ms;
-        opacity: 0;
-        animation-fill-mode: forwards;
+        height: 60px;
+        width: auto;
       }
     }
 
@@ -177,6 +135,10 @@
       color: #333333;
       margin-bottom: 25px;
 
+      @media (min-width: 1024px) {
+        margin-bottom: 20px;
+      }
+
       &:hover, &:focus {
         color: #B0976E;
       }
@@ -185,8 +147,17 @@
         color: #927D54;
       }
 
+      svg {
+        margin-left: 10px;
+        cursor: pointer;
+        @media (min-width: 1024px) {
+          display: none;
+        }
+      }
+
       &.partner {
         min-width: 220px;
+        margin: 0;
 
         .partner__icon {
           margin: 0 10px 0 0;
@@ -200,28 +171,20 @@
           display: none;
 
           svg {
-            @media (min-width: 992px) {
+            @media (min-width: 1024px) {
               display: block;
             }
           }
 
-          @media (min-width: 992px) {
+          @media (min-width: 1024px) {
             display: flex;
           }
         }
       }
-
-      svg {
-        @media (min-width: 992px) {
-          display: none;
-        }
-        margin-left: 10px;
-        cursor: pointer;
-      }
     }
 
     .main-nav {
-      margin-bottom: 25px;
+      margin: 0 0 25px 0 ;
       display: none;
       transition: 0.3s;
 
@@ -249,7 +212,7 @@
         }
       }
 
-      @media (min-width: 992px) {
+      @media (min-width: 1024px) {
         display: block;
       }
     }
