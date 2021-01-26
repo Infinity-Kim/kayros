@@ -47,20 +47,24 @@ const swiper = new Swiper('.swiper-1', {
             spaceBetween: 20
         },
         1024: {
-            slidesPerView: 1.85,
-            spaceBetween: 60
+            slidesPerView: 2.85,
+            spaceBetween: 60,
+            slidesOffsetBefore: 40
         },
         1300: {
-            slidesPerView: 2.85,
-            spaceBetween: 60
+            slidesPerView: 3.85,
+            spaceBetween: 60,
+            slidesOffsetBefore: 90
         },
         1920: {
-            slidesPerView: 2.5,
-            spaceBetween: 80
+            slidesPerView: 3.5,
+            spaceBetween: 80,
+            slidesOffsetBefore: (screen.width - 1600) / 2
         },
         2560: {
-            slidesPerView: 3.25,
-            spaceBetween: 80
+            slidesPerView: 4.25,
+            spaceBetween: 80,
+            slidesOffsetBefore: (screen.width - 1600) / 2
         }
     }
 });

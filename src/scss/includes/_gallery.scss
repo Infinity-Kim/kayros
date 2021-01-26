@@ -14,18 +14,16 @@
   @media (min-width: 1024px) {
     flex-direction: row;
     padding-bottom: 101px;
-    padding-left: 40px;
+    padding-left: 0;
     padding-top: 0;
   }
 
   @media (min-width: 1400px) {
-    padding-left: 90px;
     padding-bottom: 113px;
   }
 
   @media (min-width: 1920px) {
     padding-bottom: 0;
-    padding-left: 0;
     min-width: 0;
     align-items: stretch;
   }
@@ -34,7 +32,7 @@
     @media (min-width: 1920px) {
       display: flex;
       align-items: center;
-      padding-left: calc((100% - 1600px)/2);
+      //padding-left: calc((100% - 1600px)/2);
       height: 100vh;
     }
   }
@@ -47,10 +45,8 @@
     @media (min-width: 1024px) {
       justify-content: space-between;
       flex-direction: column;
-      margin-bottom: 74px;
-      padding-top: 113px;
-      margin-right: 136px;
-      display: flex;
+      margin-right: 0;
+
       .swiper-pagination-progressbar-fill {
         animation: rightTo 5s infinite;
       }
@@ -66,14 +62,23 @@
         }
       }
     }
-    @media (min-width: 1400px) {
-      margin-right: 108px;
+
+    &.mobile {
+      @media (min-width: 1024px) {
+        display: none;
+      }
     }
 
-    @media (min-width: 1920px) {
-      padding-top: 0;
-      margin-right: 288px;
+    &.desktop {
+      display: none;
+
+      @media (min-width: 1024px) {
+        display: flex;
+        height: 100%;
+        padding-bottom: 74px;
+      }
     }
+
     .swiper-pagination {
 
       display: none;
@@ -218,11 +223,12 @@
     .swiper-wrapper {
       .swiper-slide {
         &:nth-child(1) {
+          display: none;
           @media (min-width: 1024px) {
-            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-            animation: heightUp 666ms;
-            animation-fill-mode: forwards;
-            animation-delay: 400ms;
+            display: flex;
+            align-items: flex-start;
+            margin-right: 0!important;
+            height: 100%;
           }
         }
         &:nth-child(2) {
@@ -230,7 +236,7 @@
             clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
             animation: heightUp 666ms;
             animation-fill-mode: forwards;
-            animation-delay: 733ms;
+            animation-delay: 400ms;
           }
         }
         &:nth-child(3) {
@@ -238,7 +244,7 @@
             clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
             animation: heightUp 666ms;
             animation-fill-mode: forwards;
-            animation-delay: 1066ms;
+            animation-delay: 733ms;
           }
         }
         &:nth-child(4) {
@@ -246,7 +252,7 @@
             clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
             animation: heightUp 666ms;
             animation-fill-mode: forwards;
-            animation-delay: 1399ms;
+            animation-delay: 1066ms;
           }
         }
         &:nth-child(5) {
@@ -254,7 +260,7 @@
             clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
             animation: heightUp 666ms;
             animation-fill-mode: forwards;
-            animation-delay: 1732ms;
+            animation-delay: 1399ms;
           }
         }
         &:nth-child(6) {
@@ -262,7 +268,7 @@
             clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
             animation: heightUp 666ms;
             animation-fill-mode: forwards;
-            animation-delay: 2065ms;
+            animation-delay: 1732ms;
           }
         }
         &:nth-child(7) {
@@ -270,7 +276,16 @@
             clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
             animation: heightUp 666ms;
             animation-fill-mode: forwards;
+            animation-delay: 2065ms;
+          }
+        }
+        &:nth-child(8) {
+          @media (min-width: 1024px) {
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+            animation: heightUp 666ms;
+            animation-fill-mode: forwards;
             animation-delay: 2398ms;
+            margin-right: 0!important;
           }
         }
         @keyframes heightUp {
