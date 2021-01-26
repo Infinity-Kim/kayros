@@ -1,7 +1,9 @@
 'use strict';
-new WOW({}).init();
-//const scrollbar = window.Scrollbar.init(document.querySelector('.main-scrollbar'));
-
+new WOW({
+   // scrollContainer: '.main-scrollbar'
+}).init();
+// const scrollbar = window.Scrollbar.init(document.querySelector('.main-scrollbar'));
+// window.smoothScroll(document.querySelector('.main-scrollbar'));
 const btnTop = document.querySelector('.top'),
     footerLink = document.querySelectorAll('.toggle'),
     burger = document.querySelector('.menu__hamburger'),

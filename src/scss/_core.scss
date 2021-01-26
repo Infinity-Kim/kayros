@@ -59,6 +59,7 @@ body {
 }
 
 body {
+  scroll-behavior: smooth;
   .scrollbar-track {
     background: none;
     transition: transform .3s, opacity .3s;
