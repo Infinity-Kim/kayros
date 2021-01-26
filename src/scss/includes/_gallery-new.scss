@@ -83,8 +83,9 @@
 
   .swiper-container {
     .swiper-wrapper {
-      @media (min-width: 992px) {
+      @media (min-width: 1024px) {
         justify-content: center;
+        width: 100% !important;
       }
       .swiper-slide {
         width: auto!important;
@@ -138,6 +139,7 @@
             opacity: 0;
             animation-fill-mode: forwards;
             animation-delay: 833ms;
+            margin-right: 0!important;
           }
         }
 
