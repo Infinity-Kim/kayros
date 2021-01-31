@@ -11,6 +11,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   overflow-wrap: break-word;
   word-wrap: break-word;
+  overflow: overlay;
 }
 
 .container {
@@ -54,27 +55,32 @@ body {
   color: #333333;
 }
 
-.main-scrollbar {
-  height: 100vh;
+/* W3C standard
+   сейчас только для Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #000;
 }
 
-body {
-  scroll-behavior: smooth;
-  .scrollbar-track {
-    background: none;
-    transition: transform .3s, opacity .3s;
-
-    &:hover {
-      background: none!important;
-      transform: scaleX(1.45);
-    }
-  }
-
-  .scrollbar-thumb {
-    border-radius: 10px;
-    width: 7px;
-    cursor: grab;
+/* для Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  height: 12px;
+  width: 7px;
+  &:hover {
+    width: 10.15px;
   }
 }
+*::-webkit-scrollbar-track {
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.5);
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+.swiper-wrapper.lol {
+  transition-duration: 0.5s !important;
+}
+
 
 
