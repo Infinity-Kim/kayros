@@ -45,6 +45,97 @@ header {
       padding-right: 90px;
     }
 
+    @keyframes height100 {
+      from {
+        height: 0;
+      }
+      to {
+        height: 100%;
+      }
+    }
+    @keyframes height0 {
+      from {
+        height: 100%;
+      }
+      to {
+        height: 0;
+      }
+    }
+
+    &:hover {
+      .menu__wrapper {
+        animation: height100 666ms;
+        animation-fill-mode: forwards;
+        background: #fff;
+      }
+      //.menu__left {
+      //  .menu__logo {
+      //    path {
+      //      fill: #333333;
+      //    }
+      //  }
+      //}
+      .nav {
+        &__item {
+          &.catalog {
+            svg {
+              circle {
+                fill: #B0976E!important;
+              }
+            }
+          }
+          .nav__link {
+            color: #333333;
+          }
+        }
+      }
+      .menu__search {
+        input {
+          border: 1px solid rgba(51, 51, 51, 0.2);
+          color: #333333;
+        }
+        svg {
+          circle {
+            stroke: #333333;
+          }
+          rect {
+            fill: #333333;
+          }
+        }
+      }
+      .menu__account {
+        svg {
+          path {
+            fill: #333333;
+          }
+          circle {
+            stroke: #333333;
+          }
+        }
+      }
+      .menu__cart {
+        svg {
+          path {
+            stroke: #333333;
+          }
+        }
+      }
+      .menu__hamburger {
+        span {
+          background-color: #333333;
+        }
+      }
+    }
+
+    &__wrapper {
+      position: absolute;
+      width: 100%;
+      height: 0;
+      animation-fill-mode: forwards;
+      animation: height0 666ms;
+      left: 0;
+    }
+
     &__hamburger-aside {
       display: none;
       opacity: 0;
@@ -108,6 +199,7 @@ header {
       }
 
       .aside__content {
+        width: 100%;
         display: flex;
         flex-direction: column;
         padding: 0 15px 35px 15px;
@@ -131,7 +223,6 @@ header {
         }
         @media (min-width: 1600px) {
           padding: 0;
-          width: 100%;
         }
 
         &-title {
