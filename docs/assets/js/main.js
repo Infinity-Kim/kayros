@@ -34,9 +34,6 @@ const swiper = new Swiper('.swiper-1', {
     },
     setWrapperSize: true,
     autoHeight: true,
-    //freeMode: true,
-    //freeModeSticky: true,
-    //mousewheel: true,
     breakpoints: {
         320: {
             slidesPerView: 1.70,

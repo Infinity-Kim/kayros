@@ -129,6 +129,10 @@ header {
         @media (min-width: 1400px) {
           padding: 0 200px;
         }
+        @media (min-width: 1600px) {
+          padding: 0;
+          width: 100%;
+        }
 
         &-title {
           margin: 0 0 20px 0;
@@ -650,7 +654,6 @@ header {
     }
 
     &__title {
-      z-index: 3;
       position: relative;
       color: $white;
       text-transform: uppercase;
