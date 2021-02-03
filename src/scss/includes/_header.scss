@@ -68,13 +68,18 @@ header {
         animation-fill-mode: forwards;
         background: #fff;
       }
-      //.menu__left {
-      //  .menu__logo {
-      //    path {
-      //      fill: #333333;
-      //    }
-      //  }
-      //}
+      .menu__left {
+        .menu__logo {
+          path {
+            &.dark {
+              fill: #333333;
+            }
+            &.light {
+              fill: #B0976E;
+            }
+          }
+        }
+      }
       .nav {
         &__item {
           &.catalog {
@@ -456,12 +461,37 @@ header {
             animation-fill-mode: forwards;
           }
 
+          @keyframes height225 {
+            from {
+              height: 0;
+              opacity: 0;
+              visibility: hidden;
+            }
+            to {
+              height: 225px;
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+
+          @keyframes height2250 {
+            from {
+              height: 225px;
+              opacity: 1;
+              visibility: visible;
+            }
+            to {
+              height: 0;
+              opacity: 0;
+              visibility: hidden;
+            }
+          }
+
           &:hover {
 
             .menu__hover {
-              opacity: 1;
-              visibility: visible;
-              transition: 0.3s;
+              animation: height225 666ms;
+              animation-fill-mode: forwards;
             }
 
             + .overlay {
@@ -473,6 +503,8 @@ header {
           }
 
           .menu__hover {
+            //animation: height2250 666ms;
+            //animation-fill-mode: forwards;
             opacity: 0;
             visibility: hidden;
             position: absolute;
@@ -484,7 +516,7 @@ header {
             width: 100%;
             z-index: 2;
             transition: 0.3s;
-            height: 225px;
+            height: 0;
             display: flex;
             align-items: center;
 
