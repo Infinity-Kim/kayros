@@ -532,10 +532,7 @@ header {
               margin: 0 56px 0 170px;
 
               &:nth-child(2) {
-                margin: 0 65px 0 0;
-                @media (min-width: 1400px) {
-                  margin: 0 301px 0 0;
-                }
+                margin: 0;
               }
 
               @media (min-width: 1400px) {
@@ -560,6 +557,14 @@ header {
                 &:hover {
                   color: #B0976E
                 }
+              }
+            }
+
+            picture {
+              margin-left: auto;
+              margin-right: 40px;
+              @media (min-width: 1400px) {
+                margin-right: 90px;
               }
             }
           }
