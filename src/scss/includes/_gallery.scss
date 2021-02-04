@@ -222,6 +222,7 @@
       padding-top: 0;
     }
     .swiper-wrapper {
+      cursor: url("data:image/svg+xml,%3Csvg width='52' height='22' viewBox='0 0 52 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='26' cy='11' r='10.5' stroke='%23333333'/%3E%3Cpath d='M7 5.5L1 11.5L7 17.5' stroke='%23333333'/%3E%3Cpath d='M45 17.5L51 11.5L45 5.5' stroke='%23333333'/%3E%3C/svg%3E%0A"), pointer;
       .swiper-slide {
         &:nth-child(1) {
           display: none;
@@ -298,10 +299,12 @@
           }
         }
         &-img {
+          cursor: url("data:image/svg+xml,%3Csvg width='52' height='22' viewBox='0 0 52 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='26' cy='11' r='10.5' stroke='%23333333'/%3E%3Cpath d='M7 5.5L1 11.5L7 17.5' stroke='%23333333'/%3E%3Cpath d='M45 17.5L51 11.5L45 5.5' stroke='%23333333'/%3E%3C/svg%3E%0A"), pointer;
           width: 100%;
           text-decoration: none;
           font-size: 0;
           position: relative;
+
           img {
             width: 100%;
           }
