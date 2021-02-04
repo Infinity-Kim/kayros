@@ -8,6 +8,19 @@
               background: url('../img/icon/hover.png') center center no-repeat rgba(176,151,110,.5);
             }
           }
+          &-colors {
+            .colors__item {
+              span {
+                &.active {
+                  a {
+                    &:before {
+                      background: url('../img/swipe-new/active.png') center center no-repeat;
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -22,6 +35,19 @@
           &-img {
             &:before {
               background: url('../img/icon/hover.webp') center center no-repeat rgba(176,151,110,.5);
+            }
+          }
+          &-colors {
+            .colors__item {
+              span {
+                &.active {
+                  a {
+                    &:before {
+                      background: url('../img/swipe-new/active.webp') center center no-repeat;
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -201,27 +227,30 @@
             list-style: none;
             span {
               display: block;
-              width: 20px;
-              height: 20px;
               text-align: center;
               border: 1px solid #fff;
               padding: 1px;
 
+              &.active {
+                border: 1px solid #000;
+
+                a {
+                  &:before {
+                    content: '';
+                    position: absolute;
+                    width: 7px;
+                    height: 5px;
+                    top: 5px;
+                    left: 4px;
+                  }
+                }
+              }
+
               a {
+                position: relative;
                 width: 16px;
                 height: 16px;
                 display: block;
-                &.red {
-                  background: #d43041;
-                }
-
-                &.green {
-                  background: #8f9394;
-                }
-
-                &.blue {
-                  background: #9eb8b8;
-                }
               }
             }
           }

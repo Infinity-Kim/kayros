@@ -5,7 +5,8 @@ const btnTop = document.querySelector('.top'),
     footerLink = document.querySelectorAll('.toggle'),
     burger = document.querySelector('.menu__hamburger'),
     burgerBtnClose = document.querySelector('.aside__close'),
-    titles = document.querySelectorAll('.hover');
+    titles = document.querySelectorAll('.hover'),
+    colors = document.querySelectorAll('.swiper-slide-colors li');
 let requestId;
 const swiper2 = new Swiper('.swiper-2', {
     slidesPerView: 'auto',
@@ -112,3 +113,15 @@ footerLink.forEach((e) => {
     })
 })
 
+colors.forEach(e => {
+    e.addEventListener('click', (e) => {
+        e.preventDefault();
+        for (let node of e.currentTarget.parentNode.children) {
+            if (node.firstElementChild.classList.contains('active')) {
+                node.firstElementChild.classList.remove('active');
+            }
+        }
+        e.currentTarget.firstChild.classList.add('active');
+        console.log(e.currentTarget.parentNode.children);
+    });
+});
