@@ -82,6 +82,20 @@ header {
         background-color: #333333!important;
       }
     }
+    .info {
+      &__title {
+        color: #333333;
+      }
+      &__subtitle {
+        color: #333333;
+      }
+      svg {
+        rect {
+          stroke: #333333;
+
+        }
+      }
+    }
   }
 
 
