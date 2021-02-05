@@ -18,6 +18,9 @@ header {
 
   &.inner_wrapper {
     height: 100%;
+    .menu {
+      border-bottom: 1px solid rgba(51,51,51,.1);
+    }
     .menu__wrapper {
       background: #fff;
     }
@@ -40,6 +43,10 @@ header {
             circle {
               fill: #B0976E!important;
             }
+          }
+          .menu__hover {
+            top: 97px!important;
+            border: none!important;
           }
         }
         .nav__link {
