@@ -16,6 +16,74 @@ header {
     flex-direction: column;
   }
 
+  &.inner_wrapper {
+    .menu__wrapper {
+      background: #fff;
+    }
+    .menu__left {
+      .menu__logo {
+        path {
+          &.dark {
+            fill: #333333;
+          }
+          &.light {
+            fill: #B0976E;
+          }
+        }
+      }
+    }
+    .nav {
+      &__item {
+        &.catalog {
+          svg {
+            circle {
+              fill: #B0976E!important;
+            }
+          }
+        }
+        .nav__link {
+          color: #333333;
+        }
+      }
+    }
+    .menu__search {
+      input {
+        border: 1px solid rgba(51, 51, 51, 0.2);
+        color: #333333;
+      }
+      svg {
+        circle {
+          stroke: #333333;
+        }
+        rect {
+          fill: #333333;
+        }
+      }
+    }
+    .menu__account {
+      svg {
+        path {
+          fill: #333333;
+        }
+        circle {
+          stroke: #333333;
+        }
+      }
+    }
+    .menu__cart {
+      svg {
+        path {
+          stroke: #333333;
+        }
+      }
+    }
+    .menu__hamburger {
+      span {
+        background-color: #333333!important;
+      }
+    }
+  }
+
 
   video {
     position: absolute;
