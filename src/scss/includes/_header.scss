@@ -44,6 +44,9 @@ header {
         }
         .nav__link {
           color: #333333;
+          &:hover {
+            color: #B0976E;
+          }
         }
       }
     }
