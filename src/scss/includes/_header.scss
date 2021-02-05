@@ -44,16 +44,9 @@ header {
               fill: #B0976E!important;
             }
           }
-          .menu__hover {
-            top: 97px!important;
-            border: none!important;
-          }
         }
         .nav__link {
           color: #333333;
-          &:hover {
-            color: #B0976E;
-          }
         }
       }
     }
@@ -183,6 +176,9 @@ header {
             }
             .nav__link {
               color: #333333;
+              &:hover {
+                color: #B0976E;
+              }
             }
           }
         }
@@ -596,16 +592,14 @@ header {
           }
           .menu__hover {
             display: none;
-            //animation: height2250 666ms;
-            //animation-fill-mode: forwards;
             opacity: 0;
             visibility: hidden;
             position: absolute;
             background: #fff;
             left: 0;
-            margin-top: 19px;
+            border-bottom: 1px solid rgba(51, 51, 51, 0.1);
             border-top: 1px solid rgba(51, 51, 51, 0.1);
-            top: 72px;
+            top: 96px;
             width: 100%;
             transition: 0.3s;
             height: 0;
