@@ -1,17 +1,39 @@
-body, h2, p {
-  margin: 0;
-}
+body {
+  &.inner_wrapper_body {
+    header, footer {
+      h2, p {
+        margin: 0;
+      }
+      ul {
+        padding: 0;
+      }
 
-ul {
-  padding: 0;
-}
+      li {
+        list-style: none;
 
-li {
-  list-style: none;
-
-  a {
-    text-decoration: none;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
   }
+  &:not(.inner_wrapper_body) {
+    h2, p {
+      margin: 0;
+    }
+    ul {
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
 }
 
 input[type='search']::-webkit-search-decoration,
