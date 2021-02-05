@@ -22,7 +22,7 @@ header {
       border-bottom: 1px solid rgba(51,51,51,.1);
       &:hover {
         .nav {
-          &__item { 
+          &__item {
             &.selected {
               .nav__link {
                 color: #b0976e;
@@ -513,8 +513,12 @@ header {
       z-index: 2;
       display: flex;
       justify-content: flex-start;
-      margin-top: 27px;
-
+      margin-top: 20px;
+      margin-bottom: 10px;
+      @media (min-width: 1024px) {
+        margin-top: 27px;
+        margin-bottom: 0;
+      }
       .menu__logo {
         animation: fadeIn 666ms forwards;
         opacity: 0;
