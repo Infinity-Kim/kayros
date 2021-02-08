@@ -734,6 +734,36 @@ header {
     &__search {
       display: none;
 
+      &.mobile {
+        margin: 8px 15px 30px 15px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 44px;
+        @media (min-width: 768px) {
+          margin: 8px 20px 30px 20px;
+        }
+        @media (min-width: 1024px) {
+          display: none;
+        }
+
+        input {
+          border: 1px solid rgba(51, 51, 51, 0.2);
+          width: 100%;
+          height: 44px;
+          color: #333333;
+        }
+
+        svg {
+          circle {
+            stroke: #333333;
+          }
+          rect {
+            fill: #333333;
+          }
+        }
+      }
+
       @media (min-width: 1024px) {
         animation: fadeInLeft5 666ms;
         animation-delay: 500ms;
