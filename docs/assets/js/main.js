@@ -33,8 +33,18 @@ const swiper = new Swiper('.swiper-1', {
         el: '.swiper-pagination',
         type: 'progressbar',
     },
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+    direction: 'horizontal',
     setWrapperSize: true,
+    freeMode: true,
     autoHeight: true,
+    mousewheel: {
+        releaseOnEdges: true,
+        sensitivity: 0.75,
+        thresholdDelta: 0.1
+    },
     breakpoints: {
         320: {
             slidesPerView: 1.70,
@@ -55,12 +65,12 @@ const swiper = new Swiper('.swiper-1', {
             slidesOffsetBefore: 90
         },
         1920: {
-            slidesPerView: 3.5,
+            slidesPerView: 5.5,
             spaceBetween: 80,
             slidesOffsetBefore: (screen.width - 1600) / 2
         },
         2560: {
-            slidesPerView: 5.25,
+            slidesPerView: 6.25,
             spaceBetween: 80,
             slidesOffsetBefore: (screen.width - 1600) / 2
         }
